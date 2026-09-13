@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oye Mex — Escucha la literatura mexicana</title>
+<meta name="description" content="Oye Mex: audiolibros en español mexicano de obras clásicas de dominio público. Empieza con El Zarco de Ignacio Manuel Altamirano.">
+<style>
+:root{
+  --bg:#f6f1e7;
+  --crema:#f6f1e7;
+  --papel:#fffdf7;
+  --tinta:#1f2a20;
+  --verde:#2f5d3a;
+  --verde-osc:#214327;
+  --teja:#c0653a;
+  --teja-osc:#a34f2b;
+  --arena:#e3d5bd;
+  --linea:#e2d7c3;
+  --serif:'Cormorant Garamond', Georgia, serif;
+  --sans:'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tinta);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* ── HERO ── */
+.hero{
+  min-height:78vh;display:flex;flex-direction:column;justify-content:center;
+  align-items:center;text-align:center;padding:64px 24px;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(255,253,247,.9), rgba(250,241,231,0) 60%),
+    linear-gradient(180deg,#f4ead9, #efe2cc);
+  border-bottom:1px solid var(--line);
+}
+.hero-kicker{
+  font-size:13px;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--teja,var(--teja,#c0653a));margin-bottom:20px;font-weight:600;
+}
+.hero h1{
+  font-family:var(--serif,var(--serif,Georgia,serif));font-weight:500;
+  font-size:clamp(40px,7vw,84px);line-height:1.02;letter-spacing:.005em;max-width:20ch;
+}
+.hero h1 em{font-style:italic;color:var(--verde)}
+.hero p.sub{max-width:54ch;margin:26px auto 0;font-size:18px;color:#4a534a}
+.cta-row{margin-top:38px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.btn{
+  display:inline-block;padding:14px 28px;border-radius:999px;text-decoration:none;
+  font-size:15px;letter-spacing:.04em;transition:.2s;
+}
+.btn--verde{background:var(--verde);color:#fff}
+.btn--verde:hover{background:var(--verde-osc)}
+.btn--line{border:1px solid var(--verde);color:var(--verde)}
+.btn--line:hover{background:var(--verde);color:#fff}
+
+/* ── SECTIONS ── */
+section{padding:72px 24px}
+.section-eyebrow{
+  display:block;text-align:center;font-size:12px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--teja);margin-bottom:14px;font-weight:600;
+}
+.section-title{
+  text-align:center;font-family:var(--serif);font-weight:500;
+  font-size:clamp(28px,4vw,42px);margin-bottom:16px;
+}
+.section-lede{text-align:center;max-width:60ch;margin:0 auto 44px;color:#4a534a;font-size:17px}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+
+/* ── AUDIO / LISTEN ── */
+#escuchar{background:var(--papel);border-top:1px solid var(--line)}
+.track{
+  background:var(--papel);border:1px solid var(--line);border-radius:18px;
+  padding:26px 26px 22px;box-shadow:0 10px 30px rgba(31,42,32,.06);
+}
+.track-tag{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teja);border:1px solid var(--teja);padding:4px 12px;border-radius:999px;margin-bottom:16px}
+.track h3{font-family:var(--serif);font-size:26px;font-weight:500;margin-bottom:6px}
+.track .byline{font-size:15px;color:#6a6f4a;color:#6a726b;margin-bottom:6px}
+.track .duration{font-size:13px;color:var(--tinta);opacity:.65;margin-bottom:18px}
+.track audio{width:100%;height:52px}
+.track-meta{margin-top:18px;font-size:13px;color:#7a7f72;border-top:1px dashed var(--line);padding-top:14px;line-height:1.6}
+
+/* ── COMING / ROADMAP ── */
+#proximamente{background:var(--bg)}
+.road-list{list-style:none;max-width:520px;margin:0 auto}
+.road-list li{
+  display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--line);
+  font-size:16px;
+}
+.road-list li:first-child{border-top:none}
+.road-list .dot{width:9px;height:9px;border-radius:50%;background:var(--verde);flex:none}
+.road-list .dot--next{background:var(--teja)}
+.road-list em{color:var(--teja);font-style:italic}
+
+/* ── SOURCES / DOMINIO PÚBLICO ── */
+#fuentes{background:var(--papel)}
+.fuentes{
+  border-top:1px solid var(--line);padding:18px 0;font-size:15px;color:#5a6159;
+}
+.fuentes b{color:var(--tinta);font-family:var(--serif);font-size:17px}
+
+footer{border-top:1px solid var(--line);padding:34px 24px;text-align:center;font-size:13px;color:#858a7d}
+footer .wordmark{font-family:var(--serif);font-size:20px;color:var(--tinta);margin-bottom:6px}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <span class="hero-kicker">Audiolibros · Español mexicano</span>
+  <h1>Escucha el <em>México</em><br>que se lee.</h1>
+  <p>Clásicos de la literatura mexicana narrados en voz mexicana, gratis, en dominio público. Presiona play y deja que <em>el cuento</em> te lleve.</p>
+  <div class="cta-row">
+    <a class="btn btn--verde" href="#escuchar">▶ Escuchar ahora</a>
+    <a class="btn btn--line" href="#como-proximo">Qué viene</a>
+  </div>
+</header>
+
+<!-- ESCUCHAR -->
+<section id="escuchar">
+  <span class="section-eyebrow">Nuevo en Oye Mex</span>
+  <h2 class="section-title">El Zarco</h2>
+  <p class="section-lede">Una de las novelas esenciales de la literatura mexicana: historia de amor, honor y venganza en el México de 1861–63. Narrada con cariño en español mexicano. Escucha el principio.</p>
+  <div class="wrap">
+    <div class="track">
+      <span class="track-tag">Capítulo · Principio</span>
+      <h3>El Zarco — Principio</h3>
+      <div class="byline">Ignacio Manuel Altamirano</div>
+      <div class="duration">≈ 28 min · Español mexicano · Narración: es-MX-Jorge</div>
+      <audio controls preload="metadata" src="audio/elzarco_cap1.mp3"></audio>
+      <div class="track-meta">
+        📖 <b>El Zarco</b> (publicada póstumamente en 1900), de <b>Ignacio Manuel Altamirano</b> (1834–1893).
+        Obra de <b>dominio público</b>. Texto tomado de la Biblioteca Digital ILCE (México). Narración generada por computadora para lectura oral.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ VIENE -->
+<section id="como-proximamente">
+  <span class="section-eyebrow">Qué viene</span>
+  <h2 class="section-title">Más libros, capítulo por capítulo</h2>
+  <p class="section-lede">Estamos armando la biblioteca. Cada semana subimos más capítulos — y más títulos.</p>
+  <ul class="road-list">
+    <li><span class="dot"></span><span><strong>El Zarco</strong> — ya disponible el principio; pronto los capítulos siguientes.</span></li>
+    <li><span class="dot--next"></span><span><em>Siguiente:</em> Juegún capítulo de <strong>El Zarco</strong></span></li>
+    <li><span class="dot"></span><span>Próximos títulos: <strong>La Navidad en las montañas</strong> y más clásicos de Altamirano.</span></li>
+  </ul>
+</section>
+
+<!-- FUENTES -->
+<section id="fuentes">
+  <span class="section-eyebrow">Transparencia</span>
+  <h2 class="section-title">Fuentes y atribución</h2>
+  <div class="wrap">
+    <div class="fuentes"><b>Libro</b> — <em>El Zarco</em>, de Ignacio Manuel Altamirano. Publicado póstumamente en 1904. Autor fallecido en 1893; obra en <b>dominio público</b> en México y Estados Unidos.</div>
+    <div class="fuentes"><b>Texto</b> — Biblioteca Digital ILCE (literatura hispánica), México. Se preserva la redacción original.</div>
+    <div class="fuentes"><b>Voz</b> — Narración generada con voz de texto-a-voz (es-MX-Jorge). Audiolibro de producción propia; no afiliado al autor ni a la fuente.</div>
+    <div class="fuentes"><b>Uso</b> — Gratuito para escuchar. Por favor respeta la atribución si compartes.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wordmark">Oye Mex</div>
+  <div>Escucha la literatura mexicana · dominio público · diciembre, un capitulo a la vez.</div>
+</footer>
+
+</body>
+</html>
