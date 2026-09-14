@@ -43,7 +43,7 @@ header{border-bottom:1px solid var(--border-color);background:var(--bg-cream);po
 
 /* Hero */
 .hero{padding:64px 0 48px;border-bottom:1px solid var(--border-color);position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(248,245,238,.98) 0%,rgba(248,245,238,.92) 48%,rgba(248,245,238,.7) 100%)}
-.hero:after{content:'';position:absolute;right:-30px;top:-70px;width:480px;height:480px;opacity:.12;background:url('https://upload.wikimedia.org/wikipedia/commons/5/58/Mexico_map%2C_blank.svg') center/contain no-repeat;filter:sepia(1) saturate(2) hue-rotate(320deg)}
+.hero:after{content:'';position:absolute;right:-30px;top:-70px;width:480px;height:480px;opacity:.12;background:url('assets/mexico-map.svg') center/contain no-repeat;filter:sepia(1) saturate(2) hue-rotate(320deg)}
 .hero .container{position:relative;z-index:1}
 .hero-title{font-size:clamp(2.1rem,4vw,3.3rem);font-weight:600;line-height:1.15;margin-bottom:16px;max-width:820px}
 .hero-title em{color:var(--c-terracotta)}
@@ -198,7 +198,23 @@ const libraryData = [
  { id:"la-suave-patria", title:"La Suave Patria", author:"Ramón López Velarde", year:1921, period:"MÉXICO SIENTE", duration:"Próximamente",
    desc:"El poema épico e íntimo que busca la patria en el barro, el pan y la vida cotidiana.",
    whyListen:"López Velarde despoja al nacionalismo de fanfarrias para encontrar una patria íntima, contradictoria y vulnerable.",
-   excerpt:"Patria: tu superficie es el maíz, tus minas el palacio del Rey de Oros...", audioSrc:null }
+   excerpt:"Patria: tu superficie es el maíz, tus minas el palacio del Rey de Oros...", audioSrc:null },
+ { id:"sor-juana-poesia", title:"Poesía selecta de Sor Juana", author:"Sor Juana Inés de la Cruz", year:1692, period:"RAÍCES", duration:"Próximamente",
+   desc:"Versos de una de las grandes inteligencias literarias de la Nueva España: amor, conocimiento, ironía y libertad intelectual.",
+   whyListen:"Sor Juana demuestra que la tradición mexicana también se construye desde la curiosidad, el estudio y una voz que se niega a ser reducida al silencio.",
+   excerpt:"Hombres necios que acusáis a la mujer sin razón, sin ver que sois la ocasión de lo mismo que culpáis...", audioSrc:null },
+ { id:"cartucho", title:"Cartucho", author:"Nellie Campobello", year:1931, period:"REVOLUCIÓN", duration:"Próximamente",
+   desc:"Relatos breves y contundentes sobre la Revolución en el norte de México, vistos desde una memoria infantil y fragmentaria.",
+   whyListen:"Campobello rompe la épica convencional: la Revolución aparece en escenas, voces y cuerpos que una historia oficial suele dejar fuera.",
+   excerpt:"La memoria también tiene polvo, miedo, humor y nombres que no caben en los monumentos.", audioSrc:null },
+ { id:"el-plano-oblicuo", title:"El plano oblicuo", author:"Alfonso Reyes", year:1920, period:"MÉXICO PIENSA", duration:"Próximamente",
+   desc:"Ensayos y prosas de un escritor que conectó la tradición mexicana con la conversación literaria del mundo.",
+   whyListen:"Reyes ofrece una inteligencia hospitalaria: leer México sin encerrarlo, y leer el mundo sin perder el lugar desde donde hablamos.",
+   excerpt:"La cultura no es una decoración: es una forma de ordenar la experiencia y volverla más humana.", audioSrc:null },
+ { id:"el-diablo-desnudo", title:"El diablo desinteresado", author:"Amado Nervo", year:1916, period:"MÉXICO SIENTE", duration:"Próximamente",
+   desc:"Una novela breve de imaginación y reflexión, entre lo fantástico, lo espiritual y la vida moderna.",
+   whyListen:"Nervo permite explorar otra zona de la literatura mexicana: la búsqueda interior sin abandonar la ironía ni la forma narrativa.",
+   excerpt:"La imaginación no evade la realidad; a veces es la manera más precisa de mirarla.", audioSrc:null }
 ];
 const caminosData = [
  { title:"Camino: Entrar al México profundo", steps:"2 partes · 55 min de escucha",
@@ -280,7 +296,7 @@ function openWorkModal(id){
   '<p class="card-author" style="font-size:1.05rem">'+it.author+' — '+it.year+'</p>'+
   '<div class="detail-quote">"'+it.excerpt+'"</div>'+
   '<h4 style="font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-top:20px">¿Por qué escuchar esto?</h4>'+
-  '<p style="margin-top:6px;font-size:.95rem">'+it.whyListen+'</p>'+
+  '<p style="margin-top:6px;font-size:.95rem">'+it.whyListen+'</p>'+((it.source)?'<p class="muted" style="margin-top:18px;font-size:.78rem"><strong>Referencia editorial:</strong> '+it.source+'</p>':'')+
   '<div style="margin-top:24px;display:flex;gap:12px">'+
    (it.audioSrc?'<button class="btn btn-primary" onclick="playWork(\''+it.id+'\');closeModalDirect()">Reproducir ('+it.duration+')</button>':'<span class="pill" style="padding:10px">Audio próximamente</span>')+
    '<button class="btn btn-outline" onclick="closeModalDirect()">Regresar</button></div>';
