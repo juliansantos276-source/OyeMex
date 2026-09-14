@@ -128,7 +128,28 @@ section{padding:60px 0}
 
 footer{background:var(--c-basalt);color:#d6cfb8;padding:44px 24px;text-align:center;font-size:.82rem}
 footer .wm{font-family:var(--serif);font-size:1.6rem;color:var(--bg-cream);margin-bottom:8px}
-@media(max-width:680px){.nav-links{display:none}}
+/* SEARCH + FILTER BAR */
+.filter-bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:0 0 26px}
+.search-input{flex:1 1 280px;padding:11px 14px;border:1px solid var(--border-color);border-radius:4px;font-family:var(--sans);font-size:.95rem;background:var(--bg-surface);color:var(--text-main)}
+.search-input:focus{outline:none;border-color:var(--c-terracotta)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.filter-btn{background:transparent;border:1px solid var(--border-color);padding:8px 14px;border-radius:4px;font-size:.85rem;font-weight:500;cursor:pointer;color:var(--text-muted)}
+.filter-btn:hover{border-color:var(--c-terracotta);color:var(--c-terracotta)}
+.filter-btn.active{background:var(--c-basalt);color:#fff;border-color:var(--c-basalt)}
+/* CARDS */
+.card .card-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.card .card-title{font-family:var(--serif);font-size:1.25rem;line-height:1.3;margin-bottom:6px;font-weight:600}
+.card .card-author{font-size:.9rem;color:var(--c-terracotta);font-weight:500;margin-bottom:12px}
+.card .card-desc{font-size:.87rem;color:var(--text-muted);line-height:1.45;margin-bottom:16px}
+.card-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-color);padding-top:12px;font-size:.8rem;color:var(--text-faint)}
+/* PERSISTENT AUDIO BAR */
+.audio-player-bar{position:fixed;bottom:0;left:0;width:100%;background:var(--c-basalt);color:#fff;padding:11px 20px;display:flex;align-items:center;gap:16px;z-index:60;border-top:3px solid var(--c-terracotta)}
+.ap-controls{display:flex;align-items:center;gap:12px;flex:1}
+.ap-btn{background:var(--c-terracotta);border:none;color:#fff;width:38px;height:38px;border-radius:50%;font-size:14px;cursor:pointer;flex:none}
+.ap-btn:hover{background:var(--c-terracotta-hover)}
+.ap-title{font-weight:600;font-size:.9rem;color:#f2ecd9}
+.ap-time{font-size:.76rem;color:#bcb29a}
+body{padding-bottom:84px}
 </style>
 </head>
 <body>
@@ -154,6 +175,16 @@ footer .wm{font-family:var(--serif);font-size:1.6rem;color:var(--bg-cream);margi
 </div>
 
 <main id="view"></main>
+
+<div class="audio-player-bar">
+  <div class="ap-controls">
+    <button class="ap-btn" id="apBtn" onclick="apToggle()">▶</button>
+    <div style="min-width:0">
+      <div class="ap-title" id="apTitle">Elige un episodio para escuchar</div>
+      <div class="ap-time" id="apTime"></div>
+    </div>
+  </div>
+</div>
 
 <footer>
   <div class="wm">OyeLoMex</div>
@@ -221,13 +252,18 @@ function paintContinue(){
   document.getElementById("contWho").textContent=who;bar.style.display="block";
 }
 
+function durShort(dur){const l=(dur||"").split("·");return (l[0]||"").trim()}
 function cardHtml(w){
   const a=authorOf(w.author);
-  return `<a class="card" href="#/obra/${w.id}">
+  return `<a class="card" href="#/obra/${w.id}" data-key="${esc((w.title+" "+(a.name||"")+" "+catName(w.cat)).toLowerCase())}">
     <div class="thumb">${esc(w.title.charAt(0))}</div>
-    <div class="body"><span class="tag">${esc(catName(w.cat))}</span>
-      <h3>${esc(w.title)}</h3><div class="sub">${esc(a.name||"Autor")}</div>
-      <div class="dur">${esc(w.dur||"")}</div></div></a>`;
+    <div class="body">
+      <div class="card-meta"><span class="tag">${esc(catName(w.cat))}</span><span class="tag" style="color:var(--text-faint)">${esc((w.period||"").split(",")[0])}</span></div>
+      <h3 class="card-title">${esc(w.title)}</h3>
+      <div class="card-author">${esc(a.name||"Autor")}</div>
+      <div class="card-desc">${esc((w.desc||"").slice(0,120))}…</div>
+      <div class="card-footer"><span>${esc(durShort(w.dur))}</span><span>▶ Oír</span></div>
+    </div></a>`;
 }
 
 /* ---------- rutas ---------- */
@@ -244,17 +280,32 @@ function router(){
   else view.innerHTML=pageHome();
   paintContinue();bind();
 }
+/* persistent audio bar (mini player) */
+var AP=null;
+function apSet(title,label){document.getElementById("apTitle").textContent=title+(label?" · "+label:"");}
+function apIcon(){const b=document.getElementById("apBtn");if(b)b.textContent=(AP&&!AP.paused)?"❚❚":"▶";}
+function apPos(el,a){const d=(el||AP);if(d&&d.duration){document.getElementById("apTime").textContent=fmt(a?d.currentTime:d.duration)+" / "+fmt(d.duration);}}
+function apToggle(){const l=AP;if(!l)return;if(l.paused)l.play();else l.pause();}
+function fmt(sec){sec=Math.floor(sec||0);const m=Math.floor(sec/60),s=sec%60;return m+":"+(s<10?"0":"")+s;}
+
 function bind(){
-  document.querySelectorAll("#filters .chip").forEach(ch=>{
+  document.querySelectorAll("#filters .filter-btn").forEach(ch=>{
     ch.onclick=()=>{const c=ch.dataset.c||"";view.innerHTML=pageBiblioteca(c);paintContinue();bind();};
   });
+  var si=document.getElementById("search");
+  if(si){si.addEventListener("input",()=>{
+    const q=si.value.toLowerCase();
+    document.querySelectorAll("#workgrid .card").forEach(cv=>{cv.style.display=(!q||(cv.dataset.key||"").includes(q))?"":"none";});
+  });}
   document.querySelectorAll("audio[data-wid]").forEach(a=>{
     const wid=a.dataset.wid,idx=+a.dataset.idx;
     const l=lastSave();
     if(l&&l.wid===wid&&l.idx===idx&&l.time>0&&l.time>a.currentTime){
       a.addEventListener("loadedmetadata",()=>{try{a.currentTime=l.time}catch(e){}},{once:true});
     }
-    a.addEventListener("timeupdate",()=>{if(a.currentTime>0)a&&a.duration>0&&saveLast(wid,idx,a.currentTime);});
+    a.addEventListener("play",()=>{AP=a;apSet(a.dataset.title,a.dataset.label);apIcon();});
+    a.addEventListener("pause",()=>{if(AP===a)apIcon();});
+    a.addEventListener("timeupdate",()=>{if(a.currentTime>0&&a.duration>0){saveLast(wid,idx,a.currentTime);if(AP===a)apPos(a,a);}});
   });
 }
 
@@ -292,17 +343,20 @@ function pageHome(){
 }
 
 function pageBiblioteca(sel){
-  const chips=['<button class="chip '+(sel?"":"active")+'" data-c="">Todos</button>']
-    .concat(CATS.map(c=>`<button class="chip ${sel===c.id?"active":""}" data-c="${c.id}">${sel===c.id?"✓ ":""}${c.n}</button>`));
+  const chips=['<button class="filter-btn '+(sel?"":"active")+'" data-c="">Todos</button>']
+    .concat(CATS.map(c=>`<button class="filter-btn ${sel===c.id?"active":""}" data-c="${c.id}">${sel===c.id?"✓ ":""}${c.n}</button>`));
   const list=sel?Object.values(WORKS).filter(w=>w.cat===sel||(w.tags||[]).some(t=>t.toLowerCase()===sel.toLowerCase())):Object.values(WORKS);
-  const grid=list.length?list.map(cardHtml).join(""):`<div class="empty">En esta categoría las estantes se llenan pronto — regresa en unos días.</div>`;
+  const grid=list.length?list.map(cardHtml).join(""):`<div class="empty">En esta categoría el estante se llena pronto — regresa en unos días.</div>`;
   return `
   <section><div class="wrap">
    <span class="eyebrow">La biblioteca</span>
    <h2 class="big-title">Biblioteca</h2>
-   <p class="lede">Obras de dominio público elegidas con curadoría — un catálogo pequeño y bien curado, no un volcado infinito.</p>
+   <p class="lede">Obras de dominio público, elegidas con curadoría — un catálogo pequeño y bien curado, no un volcado infinito.</p>
+   <div class="filter-bar">
+     <input class="search-input" id="search" placeholder="Buscar por título, autor o tema…" autocomplete="off">
+   </div>
    <div class="filters" id="filters">${chips.join("")}</div>
-   <div class="works">${grid}</div>
+   <div class="works" id="workgrid">${grid}</div>
   </div></section>`;
 }
 
@@ -331,7 +385,7 @@ function pageObra(id){
   const a=authorOf(w.author);
   const eps=(w.audio||[]).map((t,i)=>`
     <div class="ep"><h4>${esc(t.label)}</h4>
-      <audio controls preload="none" src="${t.file}" data-wid="${w.id}" data-idx="${i}"></audio></div>`).join("");
+      <audio controls preload="none" src="${t.file}" data-wid="${w.id}" data-idx="${i}" data-title="${esc(w.title)}" data-label="${esc(t.label)}"></audio></div>`).join("");
   return `
   <a class="back" href="#/biblioteca">← Volver a la biblioteca</a>
   <section class="detail">
