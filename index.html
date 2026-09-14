@@ -42,11 +42,24 @@ header{border-bottom:1px solid var(--border-color);background:var(--bg-cream);po
 .nav-link:hover,.nav-link.active{color:var(--c-terracotta)}
 
 /* Hero */
-.hero{padding:64px 0 48px;border-bottom:1px solid var(--border-color)}
+.hero{padding:64px 0 48px;border-bottom:1px solid var(--border-color);position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(248,245,238,.98) 0%,rgba(248,245,238,.92) 48%,rgba(248,245,238,.7) 100%)}
+.hero:after{content:'';position:absolute;right:-30px;top:-70px;width:480px;height:480px;opacity:.12;background:url('https://upload.wikimedia.org/wikipedia/commons/5/58/Mexico_map%2C_blank.svg') center/contain no-repeat;filter:sepia(1) saturate(2) hue-rotate(320deg)}
+.hero .container{position:relative;z-index:1}
 .hero-title{font-size:clamp(2.1rem,4vw,3.3rem);font-weight:600;line-height:1.15;margin-bottom:16px;max-width:820px}
 .hero-title em{color:var(--c-terracotta)}
 .hero-subtitle{font-size:1.15rem;color:var(--text-muted);max-width:680px;margin-bottom:28px;font-family:var(--serif);font-style:italic}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+
+/* Actualidad mexicana */
+.news-section{padding:34px 0 8px;border-bottom:1px solid var(--border-color)}
+.news-heading{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:16px}
+.news-heading h2{font-size:1.65rem}.news-heading p{font-size:.85rem;color:var(--text-muted);max-width:430px}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}
+.news-card{background:var(--bg-surface);border:1px solid var(--border-color);padding:17px;border-radius:6px;min-height:170px;display:flex;flex-direction:column;transition:transform .15s ease,box-shadow .15s ease}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.05)}
+.news-category{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--c-terracotta);font-weight:700;margin-bottom:9px}
+.news-card h3{font-family:var(--serif);font-size:1rem;line-height:1.35;margin-bottom:10px}.news-card a{color:inherit;text-decoration:none}.news-card a:hover{color:var(--c-terracotta)}
+.news-meta{margin-top:auto;color:var(--text-faint);font-size:.73rem}.news-status{font-size:.8rem;color:var(--text-muted);padding:16px 0}
 
 /* Buttons */
 .btn{padding:13px 24px;border-radius:4px;font-size:.95rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;border:1px solid transparent;transition:all .18s}
@@ -89,7 +102,7 @@ header{border-bottom:1px solid var(--border-color);background:var(--bg-cream);po
 .btn-play-ctrl{background:var(--c-terracotta);border:none;width:44px;height:44px;border-radius:50%;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
 .player-scrub{flex:1;margin:0 20px;max-width:400px;display:flex;align-items:center;gap:10px;font-size:.75rem;color:var(--text-faint)}
 .player-scrub input[type=range]{flex:1;accent-color:var(--c-terracotta)}
-@media (max-width:768px){.player-scrub{display:none}.nav-links{display:none}}
+@media (max-width:768px){.player-scrub{display:none}.nav-links{display:none}.hero:after{right:-150px;opacity:.08;width:420px;height:420px}.news-grid{grid-template-columns:1fr}.news-heading{display:block}.news-heading p{margin-top:8px}}
 </style>
 </head>
 <body>
@@ -117,6 +130,11 @@ header{border-bottom:1px solid var(--border-color);background:var(--bg-cream);po
    <button class="btn btn-outline" onclick="switchTab(null,'caminos')">Explorar Caminos Curados</button>
   </div>
  </div>
+</section>
+
+<section class="news-section container" aria-labelledby="newsTitle">
+ <div class="news-heading"><div><span class="pill">Ahora en México</span><h2 id="newsTitle">Lo que se está pensando y haciendo</h2></div><p>Una ventana breve a la actualidad mexicana: ciencia, tecnología, cultura y sociedad. Las noticias abren en su fuente original.</p></div>
+ <div id="newsGrid" class="news-grid"><p class="news-status">Cargando noticias recientes de México…</p></div>
 </section>
 
 <main class="container" style="margin-top:24px">
@@ -292,6 +310,17 @@ activeAudio.ontimeupdate=()=>{
 };
 function seekAudio(v){ if(activeAudio.duration) activeAudio.currentTime=(v/100)*activeAudio.duration; }
 function formatTime(s){ s=Math.floor(s||0); const m=Math.floor(s/60); return m+':'+(s%60<10?'0':'')+(s%60); }
+function escapeHtml(value){ return String(value||'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#039;'}[c])); }
+function formatNewsDate(value){ const date=new Date(value); return Number.isNaN(date.getTime())?'Actualidad':new Intl.DateTimeFormat('es-MX',{day:'numeric',month:'short'}).format(date); }
+async function loadNews(){
+ const grid=document.getElementById('newsGrid');
+ try{
+  const response=await fetch('/.netlify/functions/news'); if(!response.ok) throw new Error('news unavailable');
+  const data=await response.json();
+  if(!data.articles.length) throw new Error('empty feed');
+  grid.innerHTML=data.articles.slice(0,6).map(article=>'<article class="news-card"><div class="news-category">'+escapeHtml(article.category)+'</div><h3><a href="'+escapeHtml(article.link)+'" target="_blank" rel="noopener">'+escapeHtml(article.title)+'</a></h3><div class="news-meta">'+escapeHtml(article.source||'Fuente original')+' · '+formatNewsDate(article.pubDate)+'</div></article>').join('');
+ }catch(error){ grid.innerHTML='<p class="news-status">Las noticias no están disponibles en este momento. Vuelve pronto para consultar la actualidad de México.</p>'; }
+}
 
 // Registro de service worker (PWA)
 if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{})); }
@@ -307,6 +336,7 @@ if(savedTrack && libraryData.some(w=>w.id===savedTrack && w.audioSrc)){
 }
 activeAudio.addEventListener('timeupdate',()=>{if(currentTrackId) localStorage.setItem('oyelomex-time-'+currentTrackId,activeAudio.currentTime);});
 applyFilters();
+loadNews();
 </script>
 </body>
 </html>
