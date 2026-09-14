@@ -124,8 +124,9 @@ header{border-bottom:1px solid var(--border-color);background:var(--bg-cream);po
   <input type="text" id="searchInput" class="search-input" placeholder="Buscar por título, autor, tema (Revolución, Raíces, Independencia)..." oninput="applyFilters()" />
   <div id="categoryPills">
    <button class="filter-btn active" onclick="setCategory('ALL')">Todos</button>
-   <button class="filter-btn" onclick="setCategory('REVOLUCIÓN')">Revolución</button>
+   <button class="filter-btn" onclick="setCategory('RAÍCES')">Raíces</button>
    <button class="filter-btn" onclick="setCategory('NACIMIENTO')">Nacimiento</button>
+   <button class="filter-btn" onclick="setCategory('REVOLUCIÓN')">Revolución</button>
    <button class="filter-btn" onclick="setCategory('MÉXICO PIENSA')">México Piensa</button>
    <button class="filter-btn" onclick="setCategory('MÉXICO SIENTE')">México Siente</button>
   </div>
@@ -156,41 +157,38 @@ header{border-bottom:1px solid var(--border-color);background:var(--bg-cream);po
 </div>
 
 <script>
-// —— Banco de dominio público (MAQUETA Fase 1) ——
+// —— Catálogo inicial: obras y audios de dominio público verificados ——
 const libraryData = [
- { id:"los-de-abajo", title:"Los de abajo", author:"Mariano Azuela", year:1915, period:"REVOLUCIÓN", duration:"4h 12m",
+ { id:"el-zarco-parte-1", title:"El Zarco · Parte I", author:"Ignacio Manuel Altamirano", year:1900, period:"MÉXICO PROFUNDO", duration:"27m 38s",
+   desc:"Novela de bandidos, pueblos y dilemas morales en el México del siglo XIX. Una entrada a la narrativa de Altamirano.",
+   whyListen:"Altamirano combina aventura, paisaje y crítica social para retratar las tensiones de un país que buscaba reconstruirse.",
+   excerpt:"En las montañas y en los pueblos, la violencia no era una leyenda: era una presencia cotidiana que ponía a prueba el carácter.",
+   audioSrc:"audio/elzarco_cap1.mp3", source:"Biblioteca Digital ILCE · grabación OyeLoMex" },
+ { id:"el-zarco-parte-2", title:"El Zarco · Parte II", author:"Ignacio Manuel Altamirano", year:1900, period:"MÉXICO PROFUNDO", duration:"27m 34s",
+   desc:"Continúa la historia de Manuela, Nicolás y el Zarco entre la violencia, el deseo y las consecuencias de las decisiones.",
+   whyListen:"La segunda parte deja ver cómo una comunidad intenta recuperar la dignidad después de que la violencia altera sus vínculos.",
+   excerpt:"La historia no absuelve a nadie: muestra el precio de confundir la libertad con el poder de imponer miedo.",
+   audioSrc:"audio/elzarco_cap2.mp3", source:"Biblioteca Digital ILCE · grabación OyeLoMex" },
+ { id:"los-de-abajo", title:"Los de abajo", author:"Mariano Azuela", year:1915, period:"REVOLUCIÓN", duration:"Próximamente",
    desc:"El retrato crudo del campesinado durante el torbellino revolucionario. Sin falsos héroes ni propaganda.",
-   whyListen:"Obra fundacional de la novela revolucionaria. Muestra la inercia del conflicto y por qué la gente común peleó.",
-   excerpt:"¿Por qué peleamos? Esa es una pregunta que nadie contesta con palabras, sino con la marcha misma de las balas sobre el cerro.",
-   audioSrc:"https://actions.google.com/sounds/v1/ambiences/outdoor_evening.ogg" },
- { id:"navidad-en-las-montanas", title:"Navidad en las montañas", author:"Ignacio Manuel Altamirano", year:1871, period:"NACIMIENTO", duration:"2h 30m",
-   desc:"Un encuentro pacífico entre un militar liberal y un sacerdote en una comunidad rural de la sierra mexicana.",
-   whyListen:"Altamirano, de origen náhuatl, muestra el anhelo de reconciliación nacional tras décadas de guerra civil.",
-   excerpt:"La paz y el progreso no vendrán de las armas, sino del aula comunitaria y el respeto mutuo entre hermanos.",
-   audioSrc:"https://actions.google.com/sounds/v1/ambiences/wind_in_trees.ogg" },
- { id:"la-suave-patria", title:"La Suave Patria", author:"Ramón López Velarde", year:1921, period:"MÉXICO SIENTE", duration:"28m",
-   desc:"El poema épico e íntimo que redefine a la patria no como monumento de mármol, sino como barro, pan y olor a pólvora.",
-   whyListen:"Despojó al nacionalismo de fanfarrias marciales para hallar el alma íntima y vulnerable de los pueblos.",
-   excerpt:"Patria: tu superficie es el maíz, tus minas el palacio del Rey de Oros, y tu cielo, las garzas en desliz...",
-   audioSrc:"https://actions.google.com/sounds/v1/ambiences/rain_heavy.ogg" },
- { id:"el-periquillo-sarniento", title:"El Periquillo Sarniento", author:"José Joaquín Fernández de Lizardi", year:1816, period:"NACIMIENTO", duration:"6h 45m",
-   desc:"Considerada la primera novela hispanoamericana. Sátira de las costumbres y vicios de las postrimerías novohispanas.",
-   whyListen:"Captura el nacimiento del humor barroco mexicano y la crítica social previa a la Independencia.",
-   excerpt:"No hay peor ignorancia que la de aquellos que se precian de doctos solo por repetir lo que otros dijeron sin entender.",
-   audioSrc:"https://actions.google.com/sounds/v1/ambiences/outdoor_evening.ogg" },
- { id:"la-raza-cosmica", title:"La Raza Cósmica (Fragmentos)", author:"José Vasconcelos", year:1925, period:"MÉXICO PIENSA", duration:"1h 50m",
-   desc:"Ensayo filosófico de visión universalista e integradora del mestizaje y el porvenir de Iberoamérica.",
-   whyListen:"Texto clave de la historia intelectual del XX para comprender ideales y contradicciones de la educación pública mexicana.",
-   excerpt:"El mestizaje no es debilidad ni pérdida; es la síntesis de sangres que busca edificar una civilización estética.",
-   audioSrc:"https://actions.google.com/sounds/v1/ambiences/wind_in_trees.ogg" }
+   whyListen:"Obra fundacional de la novela revolucionaria. Su ficha está lista; el audio se incorporará en una próxima edición.",
+   excerpt:"Una novela para escuchar la duda, el dolor y la desilusión que también formaron la Revolución.", audioSrc:null },
+ { id:"navidad-en-las-montanas", title:"Navidad en las montañas", author:"Ignacio Manuel Altamirano", year:1871, period:"NACIMIENTO", duration:"Próximamente",
+   desc:"Un encuentro entre un militar liberal y un sacerdote en una comunidad rural de la sierra mexicana.",
+   whyListen:"Altamirano imagina la educación, la comunidad y el respeto mutuo como caminos de reconciliación nacional.",
+   excerpt:"Una obra sobre la posibilidad de construir paz después de décadas de conflicto.", audioSrc:null },
+ { id:"la-suave-patria", title:"La Suave Patria", author:"Ramón López Velarde", year:1921, period:"MÉXICO SIENTE", duration:"Próximamente",
+   desc:"El poema épico e íntimo que busca la patria en el barro, el pan y la vida cotidiana.",
+   whyListen:"López Velarde despoja al nacionalismo de fanfarrias para encontrar una patria íntima, contradictoria y vulnerable.",
+   excerpt:"Patria: tu superficie es el maíz, tus minas el palacio del Rey de Oros...", audioSrc:null }
 ];
 const caminosData = [
- { title:"Camino: Entender la Revolución", steps:"3 obras · 7 h de escucha",
+ { title:"Camino: Entrar al México profundo", steps:"2 partes · 55 min de escucha",
+   desc:"Empieza con una novela de Ignacio Manuel Altamirano: pueblos, paisaje, violencia y decisiones que siguen hablando al presente.",
+   works:["El Zarco · Parte I","El Zarco · Parte II"] },
+ { title:"Camino: Entender la Revolución", steps:"Obras en preparación",
    desc:"Una ruta para ir más allá del mito oficial: oír la duda, el dolor y la literatura nacida del fuego de 1910-1925.",
-   works:["Los de abajo","La Suave Patria"] },
- { title:"Camino: Raíces del Pensamiento", steps:"4 Obras · 11 horas de escucha",
-   desc:"El recorrido por las ideas que construyeron las instituciones cívicas tras la ruptura virreinal.",
-   works:["Navidad en las montañas","El Periquillo Sarniento","La Raza Cósmica (Fragmentos)"] }
+   works:["Los de abajo","La Suave Patria"] }
 ];
 
 let currentCategory='ALL', activeTab='works';
@@ -208,8 +206,8 @@ function renderWorks(data){
     '<p class="card-author">'+it.author+' ('+it.year+')</p>'+
     '<p class="card-desc">'+it.desc+'</p>'+
    '</div>'+
-   '<div class="card-footer"><span>Escuchar obra</span>'+
-    '<button class="btn-play-ctrl" style="width:30px;height:30px;font-size:.8rem" onclick="event.stopPropagation();playWork(\''+it.id+'\')">▶</button></div>';
+   '<div class="card-footer"><span>'+(it.audioSrc?'Escuchar obra':'Audio próximamente')+'</span>'+
+    (it.audioSrc?'<button class="btn-play-ctrl" style="width:30px;height:30px;font-size:.8rem" onclick="event.stopPropagation();playWork(\''+it.id+'\')">▶</button>':'<span class="muted" style="font-size:.75rem">Ficha</span>')+'</div>';
   c.appendChild(card);
  });
 }
@@ -266,7 +264,7 @@ function openWorkModal(id){
   '<h4 style="font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-top:20px">¿Por qué escuchar esto?</h4>'+
   '<p style="margin-top:6px;font-size:.95rem">'+it.whyListen+'</p>'+
   '<div style="margin-top:24px;display:flex;gap:12px">'+
-   '<button class="btn btn-primary" onclick="playWork(\''+it.id+'\');closeModalDirect()">Reproducir ('+it.duration+')</button>'+
+   (it.audioSrc?'<button class="btn btn-primary" onclick="playWork(\''+it.id+'\');closeModalDirect()">Reproducir ('+it.duration+')</button>':'<span class="pill" style="padding:10px">Audio próximamente</span>')+
    '<button class="btn btn-outline" onclick="closeModalDirect()">Regresar</button></div>';
  document.getElementById('detailModal').style.display='flex';
 }
@@ -274,16 +272,17 @@ function closeModal(e){ if(e.target.id==='detailModal') closeModalDirect(); }
 function closeModalDirect(){ document.getElementById('detailModal').style.display='none'; }
 
 function playWork(id){
- const it=libraryData.find(w=>w.id===id); if(!it) return;
+ const it=libraryData.find(w=>w.id===id); if(!it || !it.audioSrc) return;
  if(currentTrackId!==id){
   currentTrackId=id; activeAudio.src=it.audioSrc;
+  localStorage.setItem('oyelomex-last-track',id);
   document.getElementById('currentTrackTitle').innerText=it.title+' · '+it.author;
   document.getElementById('currentTrackAuthor').innerText=it.author;
   activeAudio.play(); document.getElementById('playBtn').innerText='❚❚';
  } else { togglePlay(); }
 }
 function togglePlay(){
- if(!currentTrackId){ playWork(libraryData[0].id); return; }
+ if(!currentTrackId){ playWork(localStorage.getItem('oyelomex-last-track')||libraryData[0].id); return; }
  if(activeAudio.paused){ activeAudio.play(); document.getElementById('playBtn').innerText='❚❚'; }
  else { activeAudio.pause(); document.getElementById('playBtn').innerText='▶'; }
 }
@@ -297,6 +296,16 @@ function formatTime(s){ s=Math.floor(s||0); const m=Math.floor(s/60); return m+'
 // Registro de service worker (PWA)
 if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{})); }
 
+// Recupera la última obra escuchada (la posición se guarda al salir).
+const savedTrack=localStorage.getItem('oyelomex-last-track');
+const savedTime=parseFloat(localStorage.getItem('oyelomex-time-'+savedTrack));
+if(savedTrack && libraryData.some(w=>w.id===savedTrack && w.audioSrc)){
+ const saved=libraryData.find(w=>w.id===savedTrack); currentTrackId=savedTrack; activeAudio.src=saved.audioSrc;
+ document.getElementById('currentTrackTitle').innerText=saved.title+' · '+saved.author;
+ document.getElementById('currentTrackAuthor').innerText=saved.author;
+ activeAudio.addEventListener('loadedmetadata',()=>{if(savedTime) activeAudio.currentTime=savedTime;},{once:true});
+}
+activeAudio.addEventListener('timeupdate',()=>{if(currentTrackId) localStorage.setItem('oyelomex-time-'+currentTrackId,activeAudio.currentTime);});
 applyFilters();
 </script>
 </body>
