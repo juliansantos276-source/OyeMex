@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>OyeLoMex — Escucha a México</title>
-<meta name="description" content="OyeLoMex: una biblioteca cultural en audio. Historias, ideas y voces que ayudaron a formar México, en dominio público y en español mexicano.">
+<meta name="description" content="OyeLoMex: una biblioteca cultural en audio. Las voces, historias e ideas de dominio público que moldearon el pensamiento y la dignidad de México.">
 <link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#1f4a2e">
+<meta name="theme-color" content="#B94726">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -18,407 +18,286 @@
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg-cream:#F8F5EE;
-  --bg-surface:#FFFFFF;
-  --bg-card:#F1ECE1;
-  --text-main:#1C1917;
-  --text-muted:#57534E;
-  --text-faint:#A8A29E;
-  --c-terracotta:#B94726;
-  --c-terracotta-hover:#9A381C;
-  --c-clay:#78350F;
-  --c-basalt:#292524;
-  --border-color:#E7E0D3;
-  --serif:'Literata',Georgia,serif;
-  --sans:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
+ --bg-cream:#F8F5EE; --bg-surface:#FFFFFF; --bg-card:#F1ECE1;
+ --text-main:#1C1917; --text-muted:#57534E; --text-faint:#A8A29E;
+ --c-terracotta:#B94726; --c-terracotta-hover:#9A381C;
+ --c-clay:#78350F; --c-basalt:#292524; --border-color:#E7E0D3;
+ --serif:'Literata',Georgia,serif; --sans:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg-cream);color:var(--text);font-family:var(--sans);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:inherit}
+body{background:var(--bg-cream);color:var(--text-main);font-family:var(--sans);line-height:1.6;padding-bottom:96px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.serif{font-family:var(--serif)}
+.muted{color:var(--text-muted)}
+.pill{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;padding:3px 8px;border-radius:4px;background:var(--border-color);color:var(--c-clay);display:inline-block}
+.container{max-width:1140px;margin:0 auto;padding:0 20px}
 
-/* NAV — clean editorial */
-header,nav{background:var(--bg-cream);border-bottom:1px solid var(--border-color)}
-nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(8px)}
-.nav-inner{max-width:1140px;margin:0 auto;padding:0 20px;height:70px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;flex-direction:column;text-decoration:none;cursor:pointer;line-height:1.05}
-.brand strong{font-family:var(--sans);font-size:1.42rem;font-weight:700;letter-spacing:-.02em;color:var(--c-terracotta)}
-.brand small{font-size:.68rem;font-weight:500;letter-spacing:.08em;color:var(--text-muted);text-transform:uppercase}
+/* NAV */
+header{border-bottom:1px solid var(--border-color);background:var(--bg-cream);position:sticky;top:0;z-index:40}
+.nav-wrapper{display:flex;justify-content:space-between;align-items:center;height:70px}
+.brand{cursor:pointer;display:flex;flex-direction:column}
+.brand-logo{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;color:var(--c-terracotta)}
+.brand-tag{font-size:.7rem;font-weight:500;letter-spacing:.06em;color:var(--text-muted);text-transform:uppercase}
 .nav-links{display:flex;gap:24px;align-items:center;list-style:none}
-.nav-links a{color:var(--text);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
-.nav-links a:hover{color:var(--c-terracotta)}
-.nav-links .pill{border:1px solid var(--c-terracotta);color:var(--c-terracotta);border-radius:4px;padding:8px 16px;font-weight:600}
-.nav-links .pill:hover{background:var(--c-terracotta);color:#fff}
+.nav-link{color:var(--text-main);text-decoration:none;font-size:.95rem;font-weight:500;cursor:pointer;transition:color .2s}
+.nav-link:hover,.nav-link.active{color:var(--c-terracotta)}
 
-/* CONTINUE BAR */
-.continue{display:none;background:var(--c-basalt);color:#efe7d8;padding:12px 20px;font-size:14px}
-.continue-in{max-width:1140px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.continue .who{font-weight:600}
-.continue button{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.5);color:#fff;padding:7px 16px;border-radius:4px;cursor:pointer;font-size:13px}
-.continue button:hover{background:#fff;color:var(--c-basalt)}
+/* Hero */
+.hero{padding:64px 0 48px;border-bottom:1px solid var(--border-color)}
+.hero-title{font-size:clamp(2.1rem,4vw,3.3rem);font-weight:600;line-height:1.15;margin-bottom:16px;max-width:820px}
+.hero-title em{color:var(--c-terracotta)}
+.hero-subtitle{font-size:1.15rem;color:var(--text-muted);max-width:680px;margin-bottom:28px;font-family:var(--serif);font-style:italic}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
 
-/* HERO */
-.hero{padding:78px 20px 56px;border-bottom:1px solid var(--border-color);background:var(--bg-cream)}
-.hero-inner{max-width:1140px;margin:0 auto}
-.hero-kicker{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--c-clay);background:var(--border-color);display:inline-block;padding:4px 10px;border-radius:4px;margin-bottom:22px}
-.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.3rem,4.2vw,3.5rem);line-height:1.14;margin-bottom:16px;max-width:760px;letter-spacing:-.01em}
-.hero h1 em{font-style:italic;color:var(--c-terracotta)}
-.hero .sub{font-family:var(--serif);font-style:italic;font-size:1.22rem;color:var(--text-muted);max-width:640px;margin-bottom:28px}
-.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+/* Buttons */
 .btn{padding:13px 24px;border-radius:4px;font-size:.95rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;border:1px solid transparent;transition:all .18s}
-.btn--v{background:var(--c-terracotta);color:#fff}
-.btn--v:hover{background:var(--c-terracotta-hover)}
-.btn--t{background:transparent;color:var(--c-clay);border-color:var(--c-clay)}
-.btn--t:hover{background:var(--c-clay);color:#fff}
+.btn-primary{background:var(--c-terracotta);color:#fff}
+.btn-primary:hover{background:var(--c-terracotta-hover)}
+.btn-outline{border-color:var(--c-basalt);color:var(--c-basalt);background:transparent}
+.btn-outline:hover{background:var(--c-basalt);color:#fff}
 
-/* LAYOUT + TYPE */
-section{padding:60px 0}
-.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
-.eyebrow{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--c-terracotta);margin-bottom:12px}
-.big-title{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,3.4vw,2.8rem);color:var(--text);margin-bottom:12px;line-height:1.08;letter-spacing:-.01em}
-.lede{max-width:60ch;margin:0 0 38px;font-size:1.08rem;color:var(--text-muted);font-family:var(--serif)}
-.center{text-align:center;margin-left:auto;margin-right:auto}
-.center .eyebrow{text-align:center}
-
-/* STATEMENT */
-.statement{background:var(--c-basalt);color:#efe7d8;text-align:center;padding:70px 24px;border-top:1px solid var(--border-color);border-bottom:1px solid var(--border-color)}
-.statement p{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.3;max-width:30ch;margin:0 auto;color:#f4eee0}
-.statement em{color:var(--c-terracotta)}
-
-/* CATEGORY GRID */
-.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
-.cat{background:var(--bg-surface);border:1px solid var(--border-color);border-top:3px solid var(--c-terracotta);border-radius:6px;padding:22px 20px;text-decoration:none;color:var(--text);transition:.18s}
-.cat:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(28,25,23,.08)}
-.cat .en{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--c-clay)}
-.cat h3{font-family:var(--serif);font-size:1.42rem;font-weight:600;color:var(--text);margin:7px 0 8px;line-height:1.05}
-.cat p{font-size:.86rem;color:var(--text-muted)}
-
-/* WORKS + CARDS */
-.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
-.chip{border:1px solid var(--border-color);background:var(--bg-surface);border-radius:999px;padding:8px 16px;font-size:.82rem;cursor:pointer;color:var(--text-muted);font-weight:500}
-.chip:hover{border-color:var(--c-terracotta);color:var(--c-terracotta)}
-.chip.active{background:var(--c-basalt);color:#fff;border-color:var(--c-basalt)}
-.works{display:grid;grid-template-columns:repeat(auto-fill,minmax(286px,1fr));gap:20px}
-.card{background:var(--bg-surface);border:1px solid var(--border-color);border-radius:8px;overflow:hidden;text-decoration:none;color:var(--text);display:flex;flex-direction:column;transition:.18s}
-.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(28,25,23,.09)}
-.card .thumb{background:linear-gradient(135deg,var(--c-clay),var(--c-terracotta));color:#fff;height:86px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:2rem;font-weight:600}
-.card .body{padding:18px 20px 20px}
-.card .tag{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--c-terracotta)}
-.card h3{font-family:var(--serif);font-size:1.4rem;font-weight:600;color:var(--text);margin:6px 0 6px;line-height:1.08}
-.card .sub{font-size:.86rem;color:var(--text-muted)}
-.card .dur{margin-top:10px;font-size:.74rem;color:var(--text-faint)}
-
-/* DETAIL */
-.detail{max-width:820px;margin:0 auto;padding:0 20px 20px}
-.back{display:inline-block;margin:32px 20px 0;font-size:.9rem;color:var(--c-terracotta);text-decoration:none;font-weight:600}
-.back:hover{text-decoration:underline}
-.dh1{font-family:var(--serif);font-weight:600;font-size:clamp(2rem,5vw,2.9rem);color:var(--text);line-height:1.05;letter-spacing:-.01em}
-.dsub{font-family:var(--serif);font-size:1.12rem;color:var(--text-muted);margin-top:8px;font-style:italic}
-.meta-row{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 4px}
-.meta-pill{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700;padding:4px 10px;border-radius:4px;background:var(--border-color);color:var(--c-clay)}
-.bodycopy{font-size:1.06rem;color:#34302b;margin-top:18px;font-family:var(--serif)}
-.porque{background:var(--bg-card);border-left:4px solid var(--c-terracotta);border-radius:0 8px 8px 0;padding:18px 22px;margin-top:26px}
-.porque h4{font-family:var(--serif);font-size:1.05rem;color:var(--c-terracotta);margin-bottom:6px;font-weight:600}
-.porque p{font-size:.96rem;color:var(--text-muted)}
-.sec-label{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--c-terracotta);margin:30px 0 12px}
-.ep{background:var(--bg-surface);border:1px solid var(--border-color);border-radius:8px;padding:16px 18px;margin-bottom:14px}
-.ep h4{font-family:var(--serif);font-size:1.12rem;color:var(--text);margin-bottom:10px;font-weight:600}
-.ep audio{width:100%;height:46px}
-.empty{grid-column:1/-1;color:var(--text-faint);font-family:var(--serif);font-size:1.15rem;padding:30px}
-
-footer{background:var(--c-basalt);color:#d6cfb8;padding:44px 24px;text-align:center;font-size:.82rem}
-footer .wm{font-family:var(--serif);font-size:1.6rem;color:var(--bg-cream);margin-bottom:8px}
-/* SEARCH + FILTER BAR */
-.filter-bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:0 0 26px}
+/* Filter bar */
+.filter-bar{margin:32px 0 24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .search-input{flex:1 1 280px;padding:11px 14px;border:1px solid var(--border-color);border-radius:4px;font-family:var(--sans);font-size:.95rem;background:var(--bg-surface);color:var(--text-main)}
 .search-input:focus{outline:none;border-color:var(--c-terracotta)}
-.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+#categoryPills{display:flex;gap:8px;flex-wrap:wrap}
 .filter-btn{background:transparent;border:1px solid var(--border-color);padding:8px 14px;border-radius:4px;font-size:.85rem;font-weight:500;cursor:pointer;color:var(--text-muted)}
 .filter-btn:hover{border-color:var(--c-terracotta);color:var(--c-terracotta)}
 .filter-btn.active{background:var(--c-basalt);color:#fff;border-color:var(--c-basalt)}
-/* CARDS */
-.card .card-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-.card .card-title{font-family:var(--serif);font-size:1.25rem;line-height:1.3;margin-bottom:6px;font-weight:600}
-.card .card-author{font-size:.9rem;color:var(--c-terracotta);font-weight:500;margin-bottom:12px}
-.card .card-desc{font-size:.87rem;color:var(--text-muted);line-height:1.45;margin-bottom:16px}
-.card-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-color);padding-top:12px;font-size:.8rem;color:var(--text-faint)}
-/* PERSISTENT AUDIO BAR */
-.audio-player-bar{position:fixed;bottom:0;left:0;width:100%;background:var(--c-basalt);color:#fff;padding:11px 20px;display:flex;align-items:center;gap:16px;z-index:60;border-top:3px solid var(--c-terracotta)}
-.ap-controls{display:flex;align-items:center;gap:12px;flex:1}
-.ap-btn{background:var(--c-terracotta);border:none;color:#fff;width:38px;height:38px;border-radius:50%;font-size:14px;cursor:pointer;flex:none}
-.ap-btn:hover{background:var(--c-terracotta-hover)}
-.ap-title{font-weight:600;font-size:.9rem;color:#f2ecd9}
-.ap-time{font-size:.76rem;color:#bcb29a}
-body{padding-bottom:84px}
+
+/* Grid + Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-bottom:48px}
+.card{background:var(--bg-surface);border:1px solid var(--border-color);border-radius:6px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .15s ease,box-shadow .15s ease;cursor:pointer}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.05)}
+.card-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.card-title{font-size:1.25rem;line-height:1.3;margin-bottom:6px}
+.card-author{font-size:.9rem;color:var(--c-terracotta);font-weight:500;margin-bottom:12px}
+.card-desc{font-size:.88rem;color:var(--text-muted);line-height:1.45;margin-bottom:16px;flex-grow:1}
+.card-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-color);padding-top:12px;font-size:.8rem;color:var(--text-muted)}
+
+/* Detail modal */
+.detail-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(28,25,23,.7);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.detail-box{background:var(--bg-cream);border-radius:8px;max-width:680px;width:100%;max-height:90vh;overflow-y:auto;padding:32px;box-shadow:0 20px 40px rgba(0,0,0,.2);border:1px solid var(--border-color)}
+.detail-close{float:right;font-size:1.6rem;cursor:pointer;border:none;background:transparent;line-height:1}
+.detail-quote{border-left:3px solid var(--c-terracotta);padding-left:14px;margin:20px 0;font-family:var(--serif);font-style:italic;color:var(--c-clay);font-size:1.05rem}
+
+/* Persistent audio bar */
+.audio-player-bar{position:fixed;bottom:0;left:0;width:100%;background:var(--c-basalt);color:#fff;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;z-index:50;box-shadow:0 -4px 15px rgba(0,0,0,.15);flex-wrap:wrap;gap:12px}
+.player-track{display:flex;flex-direction:column;min-width:0;max-width:280px}
+.player-title{font-size:.95rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.player-author{font-size:.8rem;color:var(--text-faint)}
+.player-controls{display:flex;align-items:center;gap:16px}
+.btn-play-ctrl{background:var(--c-terracotta);border:none;width:44px;height:44px;border-radius:50%;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.player-scrub{flex:1;margin:0 20px;max-width:400px;display:flex;align-items:center;gap:10px;font-size:.75rem;color:var(--text-faint)}
+.player-scrub input[type=range]{flex:1;accent-color:var(--c-terracotta)}
+@media (max-width:768px){.player-scrub{display:none}.nav-links{display:none}}
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="brand" href="#/">Oye<b>Lo</b>Mex</a>
-    <ul class="nav-links">
-      <li><a href="#/biblioteca">Biblioteca</a></li>
-      <li><a href="#/camino">Un Camino</a></li>
-      <li><a href="#/autor/altamirano">Altamirano</a></li>
-      <li><a class="pill" href="#/obra/el-zarco">El Zarco</a></li>
-    </ul>
+<header>
+ <div class="container nav-wrapper">
+  <div class="brand" onclick="renderView('works')">
+   <span class="brand-logo">OyeLoMex</span>
+   <span class="brand-tag">Escucha a México</span>
   </div>
-</nav>
-<div class="mural"></div>
+  <ul class="nav-links">
+   <li><a class="nav-link active" onclick="switchTab(event,'works')">Biblioteca</a></li>
+   <li><a class="nav-link" onclick="switchTab(event,'caminos')">Caminos</a></li>
+   <li><a class="nav-link" onclick="switchTab(event,'autores')">Autores</a></li>
+  </ul>
+ </div>
+</header>
 
-<div class="continue" id="continueBar">
-  <div class="continue-in">
-    <span>▶ <span class="who" id="contWho"></span></span>
-    <button onclick="continueLast()">Continuar escuchando</button>
+<section class="hero">
+ <div class="container">
+  <h1 class="hero-title">No queremos decirte qué pensar.<br>Queremos darte algo <em>digno de pensar</em>.</h1>
+  <p class="hero-subtitle">Las voces, historias e ideas que moldearon el pensamiento y la dignidad de México, ahora en audio.</p>
+  <div class="hero-actions">
+   <button class="btn btn-primary" onclick="playWork(libraryData[0].id)">Escuchar Selección Destacada</button>
+   <button class="btn btn-outline" onclick="switchTab(null,'caminos')">Explorar Caminos Curados</button>
   </div>
+ </div>
+</section>
+
+<main class="container" style="margin-top:24px">
+ <div class="filter-bar" id="filterBar">
+  <input type="text" id="searchInput" class="search-input" placeholder="Buscar por título, autor, tema (Revolución, Raíces, Independencia)..." oninput="applyFilters()" />
+  <div id="categoryPills">
+   <button class="filter-btn active" onclick="setCategory('ALL')">Todos</button>
+   <button class="filter-btn" onclick="setCategory('REVOLUCIÓN')">Revolución</button>
+   <button class="filter-btn" onclick="setCategory('NACIMIENTO')">Nacimiento</button>
+   <button class="filter-btn" onclick="setCategory('MÉXICO PIENSA')">México Piensa</button>
+   <button class="filter-btn" onclick="setCategory('MÉXICO SIENTE')">México Siente</button>
+  </div>
+ </div>
+ <div id="contentGrid" class="grid"></div>
+</main>
+
+<div class="audio-player-bar" id="audioBar">
+ <div class="player-track">
+  <span class="player-title" id="currentTrackTitle">Selecciona una obra</span>
+  <span class="player-author" id="currentTrackAuthor">—</span>
+ </div>
+ <div class="player-controls">
+  <button class="btn-play-ctrl" id="playBtn" onclick="togglePlay()">▶</button>
+ </div>
+ <div class="player-scrub">
+  <span id="currentTime">0:00</span>
+  <input type="range" id="progressBar" value="0" min="0" max="100" onchange="seekAudio(this.value)" />
+  <span id="durationTime">0:00</span>
+ </div>
 </div>
 
-<main id="view"></main>
-
-<div class="audio-player-bar">
-  <div class="ap-controls">
-    <button class="ap-btn" id="apBtn" onclick="apToggle()">▶</button>
-    <div style="min-width:0">
-      <div class="ap-title" id="apTitle">Elige un episodio para escuchar</div>
-      <div class="ap-time" id="apTime"></div>
-    </div>
-  </div>
+<div class="detail-overlay" id="detailModal" onclick="closeModal(event)">
+ <div class="detail-box" onclick="event.stopPropagation()">
+  <button class="detail-close" onclick="closeModalDirect()">&times;</button>
+  <div id="modalContent"></div>
+ </div>
 </div>
-
-<footer>
-  <div class="wm">OyeLoMex</div>
-  <div>Historias, ideas y voces que ayudaron a formar México.</div>
-  <div style="margin-top:10px">Dominio público · audio en español mexicano · comparte con respeto.</div>
-</footer>
 
 <script>
-/* ========== CONTENIDO (esqueleto del master plan §17) ========== */
-const CATS=[
- {id:"raices",n:"Raíces",en:"Indigenous heritage",d:"Culturas originarias, mitología, poesía y voces indígenas."},
- {id:"colonia",n:"Colonia",en:"New Spain",d:"Nueva España, religión, filosofía y la formación del México culto."},
- {id:"nacimiento",n:"Nacimiento",en:"Independence & nation",d:"La Independencia y el nacimiento de la nación."},
- {id:"revolucion",n:"Revolución",en:"The Revolution",d:"La Revolución y sus consecuencias sociales."},
- {id:"piensa",n:"México Piensa",en:"Philosophy & essays",d:"Filosofía, ensayo y crítica cultural."},
- {id:"siente",n:"México Siente",en:"Poetry & feeling",d:"Poesía y literatura del amor y del interior."},
- {id:"profundo",n:"México Profundo",en:"Rural & everyday",d:"El campo, las comunidades y la vida cotidiana."},
- {id:"mundo",n:"México en el Mundo",en:"Mexico abroad",d:"Migración, identidad y México frente al mundo."}
+// —— Banco de dominio público (MAQUETA Fase 1) ——
+const libraryData = [
+ { id:"los-de-abajo", title:"Los de abajo", author:"Mariano Azuela", year:1915, period:"REVOLUCIÓN", duration:"4h 12m",
+   desc:"El retrato crudo del campesinado durante el torbellino revolucionario. Sin falsos héroes ni propaganda.",
+   whyListen:"Obra fundacional de la novela revolucionaria. Muestra la inercia del conflicto y por qué la gente común peleó.",
+   excerpt:"¿Por qué peleamos? Esa es una pregunta que nadie contesta con palabras, sino con la marcha misma de las balas sobre el cerro.",
+   audioSrc:"https://actions.google.com/sounds/v1/ambiences/outdoor_evening.ogg" },
+ { id:"navidad-en-las-montanas", title:"Navidad en las montañas", author:"Ignacio Manuel Altamirano", year:1871, period:"NACIMIENTO", duration:"2h 30m",
+   desc:"Un encuentro pacífico entre un militar liberal y un sacerdote en una comunidad rural de la sierra mexicana.",
+   whyListen:"Altamirano, de origen náhuatl, muestra el anhelo de reconciliación nacional tras décadas de guerra civil.",
+   excerpt:"La paz y el progreso no vendrán de las armas, sino del aula comunitaria y el respeto mutuo entre hermanos.",
+   audioSrc:"https://actions.google.com/sounds/v1/ambiences/wind_in_trees.ogg" },
+ { id:"la-suave-patria", title:"La Suave Patria", author:"Ramón López Velarde", year:1921, period:"MÉXICO SIENTE", duration:"28m",
+   desc:"El poema épico e íntimo que redefine a la patria no como monumento de mármol, sino como barro, pan y olor a pólvora.",
+   whyListen:"Despojó al nacionalismo de fanfarrias marciales para hallar el alma íntima y vulnerable de los pueblos.",
+   excerpt:"Patria: tu superficie es el maíz, tus minas el palacio del Rey de Oros, y tu cielo, las garzas en desliz...",
+   audioSrc:"https://actions.google.com/sounds/v1/ambiences/rain_heavy.ogg" },
+ { id:"el-periquillo-sarniento", title:"El Periquillo Sarniento", author:"José Joaquín Fernández de Lizardi", year:1816, period:"NACIMIENTO", duration:"6h 45m",
+   desc:"Considerada la primera novela hispanoamericana. Sátira de las costumbres y vicios de las postrimerías novohispanas.",
+   whyListen:"Captura el nacimiento del humor barroco mexicano y la crítica social previa a la Independencia.",
+   excerpt:"No hay peor ignorancia que la de aquellos que se precian de doctos solo por repetir lo que otros dijeron sin entender.",
+   audioSrc:"https://actions.google.com/sounds/v1/ambiences/outdoor_evening.ogg" },
+ { id:"la-raza-cosmica", title:"La Raza Cósmica (Fragmentos)", author:"José Vasconcelos", year:1925, period:"MÉXICO PIENSA", duration:"1h 50m",
+   desc:"Ensayo filosófico de visión universalista e integradora del mestizaje y el porvenir de Iberoamérica.",
+   whyListen:"Texto clave de la historia intelectual del XX para comprender ideales y contradicciones de la educación pública mexicana.",
+   excerpt:"El mestizaje no es debilidad ni pérdida; es la síntesis de sangres que busca edificar una civilización estética.",
+   audioSrc:"https://actions.google.com/sounds/v1/ambiences/wind_in_trees.ogg" }
 ];
-const AUTHORS=[
- {id:"altamirano",name:"Ignacio Manuel Altamirano",
-  dato:"1834 · Tixtla, Guerrero — 1893 · San Remo, Italia",
-  periodos:["Siglo XIX","Nacimiento","Reformas"],
-  region:"Morelos / Guerrero",
-  primero:"El zarco",
-  bio:"Escritor, periodista y político de origen indígena, considerado uno de los fundadores de la novela mexicana. Educador e impulsor, encarnó el ideal de un México que empieza a narrarse a sí mismo: popular, rural y con orgullo.",
-  porque:"Fue de los primeros en escribir un México rural sin caricatura: con dignidad, violencia y ternura a la vez. Escucharlo es entrar a la forja del México moderno."}
-];
-const WORKS=[
- {id:"el-zarco",title:"El Zarco",cat:"nacimiento",tags:["Nacimiento","México Profundo"],
-  author:"altamirano",period:"escrita ca. 1884–86; publicada ~1904",region:"Yautepec, Morelos",
-  genre:"Novela",dur:"Parte I ≈ 28 min · Parte II ≈ 28 min",
-  source:"Texto: Biblioteca Digital ILCE (México). Obra de dominio público.",
-  desc:"La historia de una época en llamas y de un amor que no puede: el México del liberalismo, sus dragones, sus haciendas de caña y sus visiones de honor.",
-  porque:"Es una de las formas en que México comenzó a narrarse a sí mismo en el XIX — una ventana al país que quería formarse antes de la Revolución.",
-  audio:[
-   {file:"audio/elzarco_cap1.mp3",label:"El Zarago — Principio"},
-   {file:"audio/elzarco_cap2.mp3",label:"El Zarago — Parte II"}
-  ]}
+const caminosData = [
+ { title:"Camino: Entender la Revolución", steps:"3 obras · 7 h de escucha",
+   desc:"Una ruta para ir más allá del mito oficial: oír la duda, el dolor y la literatura nacida del fuego de 1910-1925.",
+   works:["Los de abajo","La Suave Patria"] },
+ { title:"Camino: Raíces del Pensamiento", steps:"4 Obras · 11 horas de escucha",
+   desc:"El recorrido por las ideas que construyeron las instituciones cívicas tras la ruptura virreinal.",
+   works:["Navidad en las montañas","El Periquillo Sarniento","La Raza Cósmica (Fragmentos)"] }
 ];
 
-/* ============ NÚCLEO ============ */
-const view=document.getElementById("view");
-const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const catName=id=>{const c=CATS.find(x=>x.id===id);return c?c.n:""};
-const authorOf=id=>AUTHORS.find(a=>a.id===id)||{};
-const workOf=id=>Array.isArray(WORKS)?WORKS.find(w=>w.id===id)||null:WORKS[id]||null;
+let currentCategory='ALL', activeTab='works';
+let activeAudio=new Audio(), currentTrackId=null;
 
-/* almacenamiento local (continuar donde quedó / mi biblioteca) */
-const K_LAST="oyelomex:last", K_LIB="oyelomex:lib";
-function saveLast(wid,idx,time){try{localStorage.setItem(K_LAST,JSON.stringify({wid,idx,time,at:Date.now()}))}catch(e){}}
-function lastSave(){try{return JSON.parse(localStorage.getItem(K_LAST)||"null")}catch(e){return null}}
-function lib(){try{return JSON.parse(localStorage.getItem(K_LIB)||"[]")}catch(e){return[]}}
-function toggleLib(id){let l=lib();const i=l.indexOf(id);
-  if(i<0)l.push(id);else l.splice(i,1);
-  localStorage.setItem(K_LIB,JSON.stringify(l));return l.indexOf(id)>-1;}
-function continueLast(){const l=lastSave();if(l&&l.wid)location.hash="#/obra/"+l.wid;}
-
-function paintContinue(){
-  const l=lastSave(),bar=document.getElementById("continueBar");
-  if(!l){bar.style.display="none";return}
-  const w=WORKS[l.wid];
-  let who="tu última escucha";
-  if(w){who=w.title;if(w.audio&&w.audio[l.idx])who+=" — "+w.audio[l.idx].label;}
-  document.getElementById("contWho").textContent=who;bar.style.display="block";
+function renderWorks(data){
+ const c=document.getElementById('contentGrid'); c.innerHTML='';
+ if(!data.length){ c.innerHTML='<p class="muted" style="grid-column:1/-1;text-align:center;padding:40px 0">No se encuentran obras con ese criterio.</p>'; return; }
+ data.forEach(it=>{
+  const card=document.createElement('div'); card.className='card'; card.onclick=()=>openWorkModal(it.id);
+  card.innerHTML=
+   '<div>'+
+    '<div class="card-meta"><span class="pill">'+it.period+'</span><span class="muted" style="font-size:.75rem">'+it.duration+'</span></div>'+
+    '<h3 class="card-title">'+it.title+'</h3>'+
+    '<p class="card-author">'+it.author+' ('+it.year+')</p>'+
+    '<p class="card-desc">'+it.desc+'</p>'+
+   '</div>'+
+   '<div class="card-footer"><span>Escuchar obra</span>'+
+    '<button class="btn-play-ctrl" style="width:30px;height:30px;font-size:.8rem" onclick="event.stopPropagation();playWork(\''+it.id+'\')">▶</button></div>';
+  c.appendChild(card);
+ });
 }
-
-function durShort(dur){const l=(dur||"").split("·");return (l[0]||"").trim()}
-function cardHtml(w){
-  const a=authorOf(w.author);
-  return `<a class="card" href="#/obra/${w.id}" data-key="${esc((w.title+" "+(a.name||"")+" "+catName(w.cat)).toLowerCase())}">
-    <div class="thumb">${esc(w.title.charAt(0))}</div>
-    <div class="body">
-      <div class="card-meta"><span class="tag">${esc(catName(w.cat))}</span><span class="tag" style="color:var(--text-faint)">${esc((w.period||"").split(",")[0])}</span></div>
-      <h3 class="card-title">${esc(w.title)}</h3>
-      <div class="card-author">${esc(a.name||"Autor")}</div>
-      <div class="card-desc">${esc((w.desc||"").slice(0,120))}…</div>
-      <div class="card-footer"><span>${esc(durShort(w.dur))}</span><span>▶ Oír</span></div>
-    </div></a>`;
+function renderCaminos(){
+ const c=document.getElementById('contentGrid'); c.innerHTML='';
+ caminosData.forEach(c2=>{
+  const card=document.createElement('div'); card.className='card';
+  card.innerHTML=
+   '<div>'+
+    '<span class="pill" style="margin-bottom:12px">Curaduría OyeLoMex</span>'+
+    '<h3 class="card-title" style="margin-top:12px">'+c2.title+'</h3>'+
+    '<p class="muted" style="font-size:.85rem;margin:10px 0">'+c2.steps+'</p>'+
+    '<p class="card-desc">'+c2.desc+'</p>'+
+   '</div>'+
+   '<div class="card-footer"><span style="font-weight:600;color:var(--c-terracotta)">Iniciar este Camino →</span></div>';
+  c.appendChild(card);
+ });
 }
-
-/* ---------- rutas ---------- */
-function router(){
-  const hash=location.hash||"#/";
-  const [path,qs]=hash.replace(/^#\//,"").split("?");
-  const seg=path.split("/")[0];
-  const p=path.split("/");
-  const q=new URLSearchParams(qs||"");
-  if(seg==="biblioteca") view.innerHTML=pageBiblioteca(q.get("c")||"");
-  else if(seg==="autor") view.innerHTML=pageAutor(decodeURIComponent(p[1]||""));
-  else if(seg==="obra") view.innerHTML=pageObra(p[1]);
-  else if(seg==="camino") view.innerHTML=pageCamino();
-  else view.innerHTML=pageHome();
-  paintContinue();bind();
+function renderAutores(){
+ const c=document.getElementById('contentGrid');
+ c.innerHTML='<p class="muted" style="grid-column:1/-1;text-align:center;padding:40px 0">Directorio biográfico de Ignacio Manuel Altamirano, Sor Juana, Mariano Azuala y Alfonso Reyes — en preparación.</p>';
 }
-/* persistent audio bar (mini player) */
-var AP=null;
-function apSet(title,label){document.getElementById("apTitle").textContent=title+(label?" · "+label:"");}
-function apIcon(){const b=document.getElementById("apBtn");if(b)b.textContent=(AP&&!AP.paused)?"❚❚":"▶";}
-function apPos(el,a){const d=(el||AP);if(d&&d.duration){document.getElementById("apTime").textContent=fmt(a?d.currentTime:d.duration)+" / "+fmt(d.duration);}}
-function apToggle(){const l=AP;if(!l)return;if(l.paused)l.play();else l.pause();}
-function fmt(sec){sec=Math.floor(sec||0);const m=Math.floor(sec/60),s=sec%60;return m+":"+(s<10?"0":"")+s;}
-
-function bind(){
-  document.querySelectorAll("#filters .filter-btn").forEach(ch=>{
-    ch.onclick=()=>{const c=ch.dataset.c||"";view.innerHTML=pageBiblioteca(c);paintContinue();bind();};
-  });
-  var si=document.getElementById("search");
-  if(si){si.addEventListener("input",()=>{
-    const q=si.value.toLowerCase();
-    document.querySelectorAll("#workgrid .card").forEach(cv=>{cv.style.display=(!q||(cv.dataset.key||"").includes(q))?"":"none";});
-  });}
-  document.querySelectorAll("audio[data-wid]").forEach(a=>{
-    const wid=a.dataset.wid,idx=+a.dataset.idx;
-    const l=lastSave();
-    if(l&&l.wid===wid&&l.idx===idx&&l.time>0&&l.time>a.currentTime){
-      a.addEventListener("loadedmetadata",()=>{try{a.currentTime=l.time}catch(e){}},{once:true});
-    }
-    a.addEventListener("play",()=>{AP=a;apSet(a.dataset.title,a.dataset.label);apIcon();});
-    a.addEventListener("pause",()=>{if(AP===a)apIcon();});
-    a.addEventListener("timeupdate",()=>{if(a.currentTime>0&&a.duration>0){saveLast(wid,idx,a.currentTime);if(AP===a)apPos(a,a);}});
-  });
+function applyFilters(){
+ if(activeTab!=='works') return;
+ const q=document.getElementById('searchInput').value.toLowerCase();
+ const f=libraryData.filter(it=>{
+  const cat=currentCategory==='ALL'||it.period===currentCategory;
+  const mq=it.title.toLowerCase().includes(q)||it.author.toLowerCase().includes(q)||(it.period||'').toLowerCase().includes(q)||(it.desc||'').toLowerCase().includes(q);
+  return cat&&mq;
+ });
+ renderWorks(f);
 }
-
-/* ---------- páginas ---------- */
-function pageHome(){
-  const cats=CATS.map(c=>`<a class="cat" href="#/biblioteca?c=${c.id}"><span class="en">${c.en}</span><h3>${c.n}</h3><p>${c.d}</p></a>`).join("");
-  const w=Object.values(WORKS)[0];
-  return `
-  <section class="hero">
-    <div class="hero-inner">
-      <span class="hero-kicker">Biblioteca cultural · en voz mexicana</span>
-      <h1>Escucha el <em>México</em><br>que se lee.</h1>
-      <p class="sub">Historias, ideas y voces que ayudaron a formar México — en audio, en dominio público.</p>
-      <div class="actions">
-        <a class="btn btn--v" href="#/biblioteca">Explorar la biblioteca</a>
-        <a class="btn btn--t" href="#/camino">Empezar un Camino</a>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="wrap">
-      <span class="eyebrow">Escucha ahora</span>
-      <h2 class="big-title">Lo que está sonando</h2>
-      ${w?`<div class="works">${cardHtml(w)}</div>`:""}
-    </div>
-  </section>
-  <section style="padding-top:20px">
-    <div class="wrap">
-      <span class="eyebrow">Explorar</span>
-      <h2 class="big-title">Autores · Épocas · Temas · Regiones · Caminos</h2>
-      <div class="cats">${cats}</div>
-    </div>
-  </section>
-  <section class="statement"><p>México tiene muchas voces. Algunas vienen de hace siglos. Otras apenas comienzan. <em>Aquí las escuchamos.</em></p></section>`;
+function setCategory(cat){
+ currentCategory=cat;
+ document.querySelectorAll('#categoryPills .filter-btn').forEach(b=>{ b.classList.toggle('active',(b.innerText.toUpperCase()=== (cat==='ALL'?'TODOS':cat))); });
+ applyFilters();
 }
-
-function pageBiblioteca(sel){
-  const chips=['<button class="filter-btn '+(sel?"":"active")+'" data-c="">Todos</button>']
-    .concat(CATS.map(c=>`<button class="filter-btn ${sel===c.id?"active":""}" data-c="${c.id}">${sel===c.id?"✓ ":""}${c.n}</button>`));
-  const list=sel?Object.values(WORKS).filter(w=>w.cat===sel||(w.tags||[]).some(t=>t.toLowerCase()===sel.toLowerCase())):Object.values(WORKS);
-  const grid=list.length?list.map(cardHtml).join(""):`<div class="empty">En esta categoría el estante se llena pronto — regresa en unos días.</div>`;
-  return `
-  <section><div class="wrap">
-   <span class="eyebrow">La biblioteca</span>
-   <h2 class="big-title">Biblioteca</h2>
-   <p class="lede">Obras de dominio público, elegidas con curadoría — un catálogo pequeño y bien curado, no un volcado infinito.</p>
-   <div class="filter-bar">
-     <input class="search-input" id="search" placeholder="Buscar por título, autor o tema…" autocomplete="off">
-   </div>
-   <div class="filters" id="filters">${chips.join("")}</div>
-   <div class="works" id="workgrid">${grid}</div>
-  </div></section>`;
+function switchTab(e,tab){
+ activeTab=tab;
+ document.querySelectorAll('.nav-link').forEach(l=>l.classList.remove('active'));
+ document.querySelectorAll('.nav-link').forEach(l=>{ if(l.innerText.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')===tab) l.classList.add('active'); });
+ const clear=document.getElementById('filterBar');
+ if(tab==='works'){clear.style.display='flex';applyFilters();}
+ else if(tab==='caminos'){clear.style.display='none';renderCaminos();}
+ else {clear.style.display='none';renderAutores();}
 }
-
-function pageAutor(id){
-  const a=AUTHORS.find(x=>x.id===id);
-  if(!a)return `<a class="back" href="#/biblioteca">← Volver</a><div class="detail"><p class="bodycopy">Autor no encontrado.</p></div>`;
-  const works=Object.values(WORKS).filter(w=>w.author===id);
-  return `
-  <a class="back" href="#/biblioteca">← Volver a la biblioteca</a>
-  <section class="detail">
-   <span class="eyebrow" style="text-align:left">Autor</span>
-   <h1 class="dh1">${esc(a.name)}</h1>
-   <p class="dsub">${esc(a.dato)}</p>
-   <div class="meta-row"><span class="meta-pill">Región: <b>${esc(a.region)}</b></span>
-     ${(a.periodos||[]).map(p=>`<span class="meta-pill">${esc(p)}</span>`).join("")}</div>
-   <p class="bodycopy">${esc(a.bio)}</p>
-   <div class="porque"><h4>¿Por qué conocerlo?</h4><p>${esc(a.porque)}</p></div>
-   <div class="sec-label">Obras en audio</div>
-   ${works.length?works.map(cardHtml).join(""):`<p class="bodycopy">Aún sin audio publicado.</p>`}
-  </section>`;
+function openWorkModal(id){
+ const it=libraryData.find(w=>w.id===id); if(!it) return;
+ document.getElementById('modalContent').innerHTML=
+  '<span class="pill">'+it.period+'</span>'+
+  '<h2 style="margin:10px 0 4px;font-size:1.8rem">'+it.title+'</h2>'+
+  '<p class="card-author" style="font-size:1.05rem">'+it.author+' — '+it.year+'</p>'+
+  '<div class="detail-quote">"'+it.excerpt+'"</div>'+
+  '<h4 style="font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-top:20px">¿Por qué escuchar esto?</h4>'+
+  '<p style="margin-top:6px;font-size:.95rem">'+it.whyListen+'</p>'+
+  '<div style="margin-top:24px;display:flex;gap:12px">'+
+   '<button class="btn btn-primary" onclick="playWork(\''+it.id+'\');closeModalDirect()">Reproducir ('+it.duration+')</button>'+
+   '<button class="btn btn-outline" onclick="closeModalDirect()">Regresar</button></div>';
+ document.getElementById('detailModal').style.display='flex';
 }
+function closeModal(e){ if(e.target.id==='detailModal') closeModalDirect(); }
+function closeModalDirect(){ document.getElementById('detailModal').style.display='none'; }
 
-function pageObra(id){
-  const w=workOf(id);
-  if(!w)return `<a class="back" href="#/biblioteca">← Volver</a><div class="detail"><p class="bodycopy">No encontrada.</p></div>`;
-  const a=authorOf(w.author);
-  const eps=(w.audio||[]).map((t,i)=>`
-    <div class="ep"><h4>${esc(t.label)}</h4>
-      <audio controls preload="none" src="${t.file}" data-wid="${w.id}" data-idx="${i}" data-title="${esc(w.title)}" data-label="${esc(t.label)}"></audio></div>`).join("");
-  return `
-  <a class="back" href="#/biblioteca">← Volver a la biblioteca</a>
-  <section class="detail">
-   <span class="eyebrow" style="text-align:left">${esc(catName(w.cat))}</span>
-   <h1 class="dh1">${esc(w.title)}</h1>
-   <p class="dsub">${esc(a.name||"Autor")}</p>
-   <div class="meta-row">
-     <span class="meta-pill">Periodo: <b>${esc(w.period)}</b></span>
-     <span class="meta-pill">Región: <b>${esc(w.region)}</b></span>
-     <span class="meta-pill">Género: <b>${esc(w.genre)}</b></span>
-   </div>
-   <p class="bodycopy">${esc(w.desc)}</p>
-   <div class="sec-label">Escuchar</div>
-   ${eps}
-   <div class="sec-label">¿Por qué escuchar esto?</div>
-   <div class="porque"><p>${esc(w.porque)}</p></div>
-   <p style="font-size:13.5px;color:#7a8163;margin-top:20px">${esc(w.dur)} · ${esc(w.source)}</p>
-  </section>`;
+function playWork(id){
+ const it=libraryData.find(w=>w.id===id); if(!it) return;
+ if(currentTrackId!==id){
+  currentTrackId=id; activeAudio.src=it.audioSrc;
+  document.getElementById('currentTrackTitle').innerText=it.title+' · '+it.author;
+  document.getElementById('currentTrackAuthor').innerText=it.author;
+  activeAudio.play(); document.getElementById('playBtn').innerText='❚❚';
+ } else { togglePlay(); }
 }
-
-function pageCamino(){
-  return `
-  <section class="detail">
-   <span class="eyebrow" style="text-align:left">Caminos</span>
-   <h1 class="dh1">Un Camino</h1>
-   <p class="bodycopy">Secuencias curadas para escuchar con rumbo.<br>
-   <strong>Camino: Conoce México</strong> · <strong>Camino: Aprende a Pensar México</strong> · <strong>Camino: México para Jóvenes</strong> · <strong>Camino: México y Estados Unidos</strong></p>
-   <p class="bodycopy" style="color:#7a8163">Se iluminan cuando la biblioteca crezca. Mientras tanto, empieza por el origen: <a href="#/obra/el-zarco" style="color:var(--teja)">El Zarco</a>.</p>
-  </section>`;
+function togglePlay(){
+ if(!currentTrackId){ playWork(libraryData[0].id); return; }
+ if(activeAudio.paused){ activeAudio.play(); document.getElementById('playBtn').innerText='❚❚'; }
+ else { activeAudio.pause(); document.getElementById('playBtn').innerText='▶'; }
 }
+activeAudio.ontimeupdate=()=>{
+ const p=document.getElementById('progressBar'), ct=document.getElementById('currentTime'), dt=document.getElementById('durationTime');
+ if(activeAudio.duration){ p.value=(activeAudio.currentTime/activeAudio.duration)*100; ct.innerText=formatTime(activeAudio.currentTime); dt.innerText=formatTime(activeAudio.duration); }
+};
+function seekAudio(v){ if(activeAudio.duration) activeAudio.currentTime=(v/100)*activeAudio.duration; }
+function formatTime(s){ s=Math.floor(s||0); const m=Math.floor(s/60); return m+':'+(s%60<10?'0':'')+(s%60); }
 
-window.addEventListener("hashchange",()=>router());
-router();
+// Registro de service worker (PWA)
+if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{})); }
+
+applyFilters();
 </script>
 </body>
 </html>
