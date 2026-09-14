@@ -1,0 +1,6 @@
+android/
+parts/
+parts2/
+*.keystore
+make_icons.py
+work_cap2.py
