@@ -181,12 +181,12 @@ const libraryData = [
    desc:"Novela de bandidos, pueblos y dilemas morales en el México del siglo XIX. Una entrada a la narrativa de Altamirano.",
    whyListen:"Altamirano combina aventura, paisaje y crítica social para retratar las tensiones de un país que buscaba reconstruirse.",
    excerpt:"En las montañas y en los pueblos, la violencia no era una leyenda: era una presencia cotidiana que ponía a prueba el carácter.",
-   audioSrc:"audio/elzarco_cap1.mp3", source:"Biblioteca Digital ILCE · grabación OyeLoMex" },
+   audioSrc:"audio/elzarco_cap1.mp3", source:"Biblioteca Digital ILCE · grabación OyeLoMex", textUrl:"https://es.wikisource.org/wiki/El_Zarco/Cap%C3%ADtulo_I" },
  { id:"el-zarco-parte-2", title:"El Zarco · Parte II", author:"Ignacio Manuel Altamirano", year:1900, period:"MÉXICO PROFUNDO", duration:"27m 34s",
    desc:"Continúa la historia de Manuela, Nicolás y el Zarco entre la violencia, el deseo y las consecuencias de las decisiones.",
    whyListen:"La segunda parte deja ver cómo una comunidad intenta recuperar la dignidad después de que la violencia altera sus vínculos.",
    excerpt:"La historia no absuelve a nadie: muestra el precio de confundir la libertad con el poder de imponer miedo.",
-   audioSrc:"audio/elzarco_cap2.mp3", source:"Biblioteca Digital ILCE · grabación OyeLoMex" },
+   audioSrc:"audio/elzarco_cap2.mp3", source:"Biblioteca Digital ILCE · grabación OyeLoMex", textUrl:"https://es.wikisource.org/wiki/El_Zarco/Cap%C3%ADtulo_II" },
  { id:"los-de-abajo", title:"Los de abajo", author:"Mariano Azuela", year:1915, period:"REVOLUCIÓN", duration:"Próximamente",
    desc:"El retrato crudo del campesinado durante el torbellino revolucionario. Sin falsos héroes ni propaganda.",
    whyListen:"Obra fundacional de la novela revolucionaria. Su ficha está lista; el audio se incorporará en una próxima edición.",
@@ -202,7 +202,7 @@ const libraryData = [
  { id:"sor-juana-poesia", title:"Poesía selecta de Sor Juana", author:"Sor Juana Inés de la Cruz", year:1692, period:"RAÍCES", duration:"Próximamente",
    desc:"Versos de una de las grandes inteligencias literarias de la Nueva España: amor, conocimiento, ironía y libertad intelectual.",
    whyListen:"Sor Juana demuestra que la tradición mexicana también se construye desde la curiosidad, el estudio y una voz que se niega a ser reducida al silencio.",
-   excerpt:"Hombres necios que acusáis a la mujer sin razón, sin ver que sois la ocasión de lo mismo que culpáis...", audioSrc:null },
+   excerpt:"Hombres necios que acusáis a la mujer sin razón, sin ver que sois la ocasión de lo mismo que culpáis...", audioSrc:null, textUrl:"https://es.wikisource.org/wiki/Redondillas" },
  { id:"cartucho", title:"Cartucho", author:"Nellie Campobello", year:1931, period:"REVOLUCIÓN", duration:"Próximamente",
    desc:"Relatos breves y contundentes sobre la Revolución en el norte de México, vistos desde una memoria infantil y fragmentaria.",
    whyListen:"Campobello rompe la épica convencional: la Revolución aparece en escenas, voces y cuerpos que una historia oficial suele dejar fuera.",
@@ -233,6 +233,8 @@ function renderWorks(data){
  if(!data.length){ c.innerHTML='<p class="muted" style="grid-column:1/-1;text-align:center;padding:40px 0">No se encuentran obras con ese criterio.</p>'; return; }
  data.forEach(it=>{
   const card=document.createElement('div'); card.className='card'; card.onclick=()=>openWorkModal(it.id);
+  card.setAttribute('role','button'); card.setAttribute('tabindex','0'); card.setAttribute('aria-label','Abrir '+it.title);
+  card.onkeydown=(e)=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openWorkModal(it.id);}};
   card.innerHTML=
    '<div>'+
     '<div class="card-meta"><span class="pill">'+it.period+'</span><span class="muted" style="font-size:.75rem">'+it.duration+'</span></div>'+
@@ -240,7 +242,7 @@ function renderWorks(data){
     '<p class="card-author">'+it.author+' ('+it.year+')</p>'+
     '<p class="card-desc">'+it.desc+'</p>'+
    '</div>'+
-   '<div class="card-footer"><span>'+(it.audioSrc?'Escuchar obra':'Audio próximamente')+'</span>'+
+   '<div class="card-footer"><span>'+(it.audioSrc?'Escuchar obra':'Abrir ficha')+'</span>'+
     (it.audioSrc?'<button class="btn-play-ctrl" style="width:30px;height:30px;font-size:.8rem" onclick="event.stopPropagation();playWork(\''+it.id+'\')">▶</button>':'<span class="muted" style="font-size:.75rem">Ficha</span>')+'</div>';
   c.appendChild(card);
  });
@@ -297,8 +299,9 @@ function openWorkModal(id){
   '<div class="detail-quote">"'+it.excerpt+'"</div>'+
   '<h4 style="font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-top:20px">¿Por qué escuchar esto?</h4>'+
   '<p style="margin-top:6px;font-size:.95rem">'+it.whyListen+'</p>'+((it.source)?'<p class="muted" style="margin-top:18px;font-size:.78rem"><strong>Referencia editorial:</strong> '+it.source+'</p>':'')+
-  '<div style="margin-top:24px;display:flex;gap:12px">'+
+  '<div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">'+
    (it.audioSrc?'<button class="btn btn-primary" onclick="playWork(\''+it.id+'\');closeModalDirect()">Reproducir ('+it.duration+')</button>':'<span class="pill" style="padding:10px">Audio próximamente</span>')+
+   (it.textUrl?'<a class="btn btn-outline" href="'+it.textUrl+'" target="_blank" rel="noopener">Leer texto completo ↗</a>':'')+
    '<button class="btn btn-outline" onclick="closeModalDirect()">Regresar</button></div>';
  document.getElementById('detailModal').style.display='flex';
 }
