@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OyeLoMex Rights Ledger",
+  "description": "Internal rights ledger. Unknown values block publication of the affected layer.",
+  "type": "object",
+  "required": ["version", "updatedAt", "entries"],
+  "properties": {
+    "version": { "type": "integer" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["workId", "title", "author", "territories", "layers", "reviewer", "reviewedAt"],
+        "properties": {
+          "workId": { "type": "string" },
+          "title": { "type": "string" },
+          "author": { "type": "string" },
+          "authorDeathYear": { "type": ["integer", "null"] },
+          "firstPublicationYear": { "type": ["integer", "null"] },
+          "period": { "type": "string" },
+          "region": { "type": "string" },
+          "genres": { "type": "array", "items": { "type": "string" } },
+          "originalLanguage": { "type": "string" },
+          "languageVariant": { "type": ["string", "null"] },
+          "translation": {
+            "type": ["object", "null"],
+            "properties": {
+              "translator": { "type": ["string", "null"] },
+              "languageConsultant": { "type": ["string", "null"] },
+              "sourceLanguage": { "type": "string" },
+              "targetLanguage": { "type": "string" },
+              "translationStatus": { "type": "string", "enum": ["cleared", "restricted", "unknown"] }
+            }
+          },
+          "territories": { "type": "array", "items": { "type": "string" } },
+          "layers": {
+            "type": "object",
+            "required": ["underlyingWork", "edition", "translation", "transcription", "recording"],
+            "properties": {
+              "underlyingWork": { "$ref": "#/$defs/rightsLayer" },
+              "edition": { "$ref": "#/$defs/rightsLayer" },
+              "translation": { "$ref": "#/$defs/rightsLayer" },
+              "transcription": { "$ref": "#/$defs/rightsLayer" },
+              "recording": { "$ref": "#/$defs/rightsLayer" }
+            }
+          },
+          "sourceUrl": { "type": ["string", "null"] },
+          "sourceInstitution": { "type": ["string", "null"] },
+          "license": { "type": ["string", "null"] },
+          "contact": { "type": ["string", "null"] },
+          "legalReviewRequired": { "type": "boolean" },
+          "notes": { "type": "string" },
+          "reviewer": { "type": "string" },
+          "reviewedAt": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "rightsLayer": {
+      "type": "object",
+      "required": ["status", "territories", "evidenceUrl", "reviewDue"],
+      "properties": {
+        "status": { "type": "string", "enum": ["cleared", "restricted", "unknown"] },
+        "territories": { "type": "array", "items": { "type": "string" } },
+        "evidenceUrl": { "type": ["string", "null"] },
+        "license": { "type": ["string", "null"] },
+        "term": { "type": ["string", "null"] },
+        "contact": { "type": ["string", "null"] },
+        "reviewDue": { "type": ["string", "null"] },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
   "project": "OyeLoMex",
-  "version": 2,
-  "stage": "orchestra-pilot-task-002",
-  "activeTask": "task-002",
+  "version": 3,
+  "stage": "roadmap-task-003",
+  "activeTask": "task-003",
   "allowedProductionActions": {
     "researcher": ["read_workspace", "web_research", "write_research"],
     "builder": ["read_workspace", "modify_branch_or_workspace", "run_tests", "write_build_report"],
@@ -11,6 +11,6 @@
   },
   "publicationRule": "No se publica ningún cambio sin revisión PASS del Critic y aprobación explícita del Orchestrator.",
   "updatedAt": "2026-09-14",
-  "lastDecision": "Task-002 created: El Zarco Chapter III.",
-  "completedTasks": ["task-001"]
+  "lastDecision": "Task-003 created: OyeLoMex Cultural Library Roadmap.",
+  "completedTasks": ["task-001", "task-002"]
 }

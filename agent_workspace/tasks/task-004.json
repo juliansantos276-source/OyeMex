@@ -1,0 +1,89 @@
+{
+  "id": "task-004",
+  "project": "OyeLoMex",
+  "title": "Build the Rights-Ledger MVP",
+  "goal": "Create a structured, internal rights ledger covering every current catalog work and proposed candidate, with separate rights layers, territories, evidence, reviewer, and safe unknown defaults.",
+  "createdBy": "orchestrator",
+  "status": "approved",
+  "currentRole": "orchestrator",
+  "dependencies": [
+    "task-001",
+    "task-002",
+    "task-003"
+  ],
+  "scope": {
+    "allowedFiles": [
+      "agent_workspace/state/rights-ledger.json",
+      "agent_workspace/state/rights-ledger.schema.json",
+      "agent_workspace/research/task-004-research.md",
+      "agent_workspace/builds/task-004-build.md",
+      "agent_workspace/reviews/task-004-review.md",
+      "agent_workspace/tasks/task-004.json"
+    ],
+    "forbiddenActions": [
+      "publish_without_approval",
+      "modify_production_site",
+      "modify_secrets",
+      "invent_sources",
+      "delete_user_data"
+    ]
+  },
+  "deliverables": {
+    "research": "agent_workspace/research/task-004-research.md",
+    "build": "agent_workspace/builds/task-004-build.md",
+    "ledger": "agent_workspace/state/rights-ledger.json",
+    "schema": "agent_workspace/state/rights-ledger.schema.json",
+    "review": "agent_workspace/reviews/task-004-review.md"
+  },
+  "acceptanceCriteria": [
+    "Ledger covers all current catalog works and the task-003 proposed candidates.",
+    "Each entry separates underlying-work, edition, translation, transcription, and recording rights.",
+    "Each entry records territory, source URL, institution, license, contact if known, reviewer, and review/tier tags.",
+    "Unverified fields default to unknown and are explicitly non-publishable.",
+    "Jurisdiction-sensitive rows (López Velarde, Reyes) carry explicit uncertainty and legal-review flag.",
+    "Translation entity records translator and language consultant when a translated/bilingual expression exists.",
+    "Ledger is valid JSON validated against its schema.",
+    "Critic issues PASS before any use for publication decisions.",
+    "No public production files are changed."
+  ],
+  "evidenceRequired": [
+    "source_urls",
+    "rights_layers",
+    "territories",
+    "schema",
+    "test_output",
+    "critic_verdict"
+  ],
+  "history": [
+    {
+      "status": "queued",
+      "role": "orchestrator",
+      "note": "Approved by Julian; ledger scope defined from task-003."
+    },
+    {
+      "status": "researched",
+      "role": "researcher",
+      "note": "Ledger populated with 29 entries (9 current + 20 proposed). Gap noted: El Zarco Parte III missing; to be added by Builder."
+    },
+    {
+      "status": "built",
+      "role": "builder",
+      "note": "Added El Zarco Parte III (audio asset elzarco_cap3.mp3) with five unknown rights layers; validated JSON and schema."
+    },
+    {
+      "status": "reviewing",
+      "role": "critic",
+      "note": "Critic began independent verification of the 30-entry ledger (coverage, layers, unknown defaults, schema, production-file integrity)."
+    },
+    {
+      "status": "passed",
+      "role": "critic",
+      "note": "Critic PASS. All 9 verification checks met: 30 unique entries, five unknown publication-blocking layers each, no license misrepresentation, translation records with translator/consultant fields, legalReviewRequired flags on la-suave-patria and el-plano-oblicuo, JSON/Schema validation passes, no production files changed, scope respected. Non-blocking observations in reviews/task-004-review.md (Visión de Anáhuac and Pedro Páramo slash-listed alternates unregistered; research doc count says 29 vs 30). Ledger remains non-publishable until layers are upgraded from unknown."
+    },
+    {
+      "status": "approved",
+      "role": "orchestrator",
+      "note": "Ledger approved as internal artifact; all layers remain non-publishable until upgraded from unknown."
+    }
+  ]
+}

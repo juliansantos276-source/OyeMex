@@ -1,0 +1,43 @@
+{
+  "id": "task-003",
+  "project": "OyeLoMex",
+  "title": "Create the OyeLoMex Cultural Library Roadmap",
+  "goal": "Design a source-backed, balanced, practical roadmap for growing OyeLoMex into a major digital library for Mexican thought.",
+  "createdBy": "orchestrator",
+  "status": "approved",
+  "currentRole": "orchestrator",
+  "dependencies": ["task-001", "task-002"],
+  "scope": {
+    "allowedFiles": [
+      "agent_workspace/research/task-003-research.md",
+      "agent_workspace/builds/task-003-strategy.md",
+      "agent_workspace/reviews/task-003-review.md",
+      "agent_workspace/state/task-003-roadmap.json",
+      "plans/MASTER_PLAN.md"
+    ],
+    "forbiddenActions": ["publish_without_approval", "modify_production_site", "modify_secrets", "invent_sources", "delete_user_data"]
+  },
+  "deliverables": {
+    "research": "agent_workspace/research/task-003-research.md",
+    "strategy": "agent_workspace/builds/task-003-strategy.md",
+    "review": "agent_workspace/reviews/task-003-review.md",
+    "roadmapData": "agent_workspace/state/task-003-roadmap.json"
+  },
+  "acceptanceCriteria": [
+    "Research includes a balanced author/work shortlist across periods, regions, genres, Indigenous thought, women, and intellectual traditions.",
+    "Every factual recommendation has a source URL or is explicitly labeled as a proposal or uncertainty.",
+    "Rights analysis distinguishes author copyright from edition, translation, transcription, and recording rights.",
+    "Strategy defines a practical metadata model, catalog growth phases, and audio-production priorities.",
+    "Critic checks historical balance, rights risk, feasibility, and unsupported claims.",
+    "No public production files are changed during this roadmap task."
+  ],
+  "evidenceRequired": ["source_urls", "rights_notes", "coverage_matrix", "metadata_schema", "critic_verdict"],
+  "history": [
+    {"status": "queued", "role": "orchestrator", "note": "Roadmap task approved by Julian; research phase begins."},
+    {"status": "researched", "role": "researcher", "note": "Research complete: source-backed shortlist, coverage matrix, rights model, phases, and READY WITH CONDITIONS verdict."},
+    {"status": "built", "role": "builder", "note": "Strategy and structured roadmap built; moved to critic for review."},
+    {"status": "reviewing", "role": "critic", "note": "Critic review started against task-003.json, research, strategy, roadmap state, and MASTER_PLAN."},
+    {"status": "passed", "role": "critic", "note": "PASS with non-blocking corrections C1 (Afro-Mexican representation plan for P1), C2 (add translation entity to metadata schema), C3 (explicit per-item jurisdiction uncertainty for López Velarde/Reyes). No blockers; production files untouched. Verdict in reviews/task-003-review.md."},
+    {"status": "approved", "role": "orchestrator", "note": "Corrections C1-C3 incorporated into strategy and roadmap data. Internal roadmap approved; no production deployment."}
+  ]
+}

@@ -1,0 +1,2856 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-15T01:30:00Z",
+  "entries": [
+    {
+      "workId": "el-zarco-parte-i",
+      "title": "El Zarco · Parte I",
+      "author": "Ignacio Manuel Altamirano",
+      "authorDeathYear": 1893,
+      "firstPublicationYear": 1900,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://es.wikisource.org/wiki/El_Zarco/Cap%C3%ADtulo_I",
+      "sourceInstitution": "Wikisource",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Current catalog row; source and edition rights remain unverified.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "el-zarco-parte-ii",
+      "title": "El Zarco · Parte II",
+      "author": "Ignacio Manuel Altamirano",
+      "authorDeathYear": 1893,
+      "firstPublicationYear": 1900,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://es.wikisource.org/wiki/El_Zarco/Cap%C3%ADtulo_I",
+      "sourceInstitution": "Wikisource",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Current catalog row; source and edition rights remain unverified.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "el-zarco-parte-iii",
+      "title": "El Zarco · Parte III",
+      "author": "Ignacio Manuel Altamirano",
+      "authorDeathYear": 1893,
+      "firstPublicationYear": 1900,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": null,
+      "sourceInstitution": null,
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Current catalog row; audio asset elzarco_cap3.mp3 exists, but all layer rights remain unverified and unknown blocks publication.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "los-de-abajo",
+      "title": "Los de abajo",
+      "author": "Mariano Azuela",
+      "authorDeathYear": 1952,
+      "firstPublicationYear": 1915,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Current catalog row; source and edition rights remain unverified.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "navidad-en-las-montanas",
+      "title": "Navidad en las montañas",
+      "author": "Ignacio Manuel Altamirano",
+      "authorDeathYear": 1893,
+      "firstPublicationYear": 1871,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Current catalog row; source and edition rights remain unverified.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "la-suave-patria",
+      "title": "La suave patria",
+      "author": "Ramón López Velarde",
+      "authorDeathYear": 1921,
+      "firstPublicationYear": 1921,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": true,
+      "notes": "Current catalog row; source and edition rights remain unverified. Jurisdiction and term uncertainty requires legal review before any publication or recording.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "poesia-selecta-sor-juana",
+      "title": "Poesía selecta de Sor Juana",
+      "author": "Sor Juana Inés de la Cruz",
+      "authorDeathYear": 1695,
+      "firstPublicationYear": 1692,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Current catalog row; source and edition rights remain unverified.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "cartucho",
+      "title": "Cartucho",
+      "author": "Nellie Campobello",
+      "authorDeathYear": 1986,
+      "firstPublicationYear": 1931,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Current catalog row; source and edition rights remain unverified.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "el-plano-oblicuo",
+      "title": "El plano oblicuo",
+      "author": "Alfonso Reyes",
+      "authorDeathYear": 1959,
+      "firstPublicationYear": 1920,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": true,
+      "notes": "Current catalog row; source and edition rights remain unverified. Jurisdiction and term uncertainty requires legal review before any publication or recording.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "el-diablo-desinteresado",
+      "title": "El diablo desinteresado",
+      "author": "Amado Nervo",
+      "authorDeathYear": 1919,
+      "firstPublicationYear": 1916,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Current catalog row; source and edition rights remain unverified.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "respuesta-sor-filotea",
+      "title": "Respuesta a Sor Filotea",
+      "author": "Sor Juana Inés de la Cruz",
+      "authorDeathYear": 1695,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "primero-sueno",
+      "title": "Primero sueño",
+      "author": "Sor Juana Inés de la Cruz",
+      "authorDeathYear": 1695,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "redondillas",
+      "title": "Redondillas",
+      "author": "Sor Juana Inés de la Cruz",
+      "authorDeathYear": 1695,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://es.wikisource.org/wiki/Redondillas",
+      "sourceInstitution": "Wikisource",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "poemas-nezahualcoyotl",
+      "title": "Poemas atribuidos a Nezahualcóyotl",
+      "author": "Nezahualcóyotl",
+      "authorDeathYear": null,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": {
+        "translator": null,
+        "languageConsultant": null,
+        "sourceLanguage": "unknown",
+        "targetLanguage": "es",
+        "translationStatus": "unknown"
+      },
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "popol-vuh",
+      "title": "Popol Vuh",
+      "author": "Tradición k’iche’",
+      "authorDeathYear": null,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": {
+        "translator": null,
+        "languageConsultant": null,
+        "sourceLanguage": "unknown",
+        "targetLanguage": "es",
+        "translationStatus": "unknown"
+      },
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "huehuetlatolli",
+      "title": "Huehuetlatolli / testimonios nahuas",
+      "author": "Tradición nahua",
+      "authorDeathYear": null,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": {
+        "translator": null,
+        "languageConsultant": null,
+        "sourceLanguage": "unknown",
+        "targetLanguage": "es",
+        "translationStatus": "unknown"
+      },
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "codice-florentino-selecciones",
+      "title": "Selecciones del Códice Florentino",
+      "author": "Bernardino de Sahagún",
+      "authorDeathYear": 1590,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": {
+        "translator": null,
+        "languageConsultant": null,
+        "sourceLanguage": "unknown",
+        "targetLanguage": "es",
+        "translationStatus": "unknown"
+      },
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "el-periquillo-sarniento",
+      "title": "El Periquillo Sarniento",
+      "author": "José Joaquín Fernández de Lizardi",
+      "authorDeathYear": 1827,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "memorias-de-mis-tiempos",
+      "title": "Memorias de mis tiempos",
+      "author": "Guillermo Prieto",
+      "authorDeathYear": 1897,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "nahui-olin-poesia",
+      "title": "Poesía/ensayo seleccionado",
+      "author": "Nahui Olin",
+      "authorDeathYear": 1978,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "balun-canan",
+      "title": "Balún-Canán",
+      "author": "Rosario Castellanos",
+      "authorDeathYear": 1974,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "hasta-no-verte-jesus-mio",
+      "title": "Hasta no verte Jesús mío",
+      "author": "Elena Poniatowska",
+      "authorDeathYear": null,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "poesia-jaime-sabines",
+      "title": "Poesía",
+      "author": "Jaime Sabines",
+      "authorDeathYear": 1999,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "la-raza-cosmica",
+      "title": "La raza cósmica",
+      "author": "José Vasconcelos",
+      "authorDeathYear": 1959,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "perfil-hombre-cultura-mexico",
+      "title": "El perfil del hombre y la cultura en México",
+      "author": "Samuel Ramos",
+      "authorDeathYear": 1959,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "positivismo-en-mexico",
+      "title": "El positivismo en México",
+      "author": "Leopoldo Zea",
+      "authorDeathYear": 2004,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "laberinto-soledad",
+      "title": "El laberinto de la soledad",
+      "author": "Octavio Paz",
+      "authorDeathYear": 1998,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "llano-en-llamas",
+      "title": "El Llano en llamas",
+      "author": "Juan Rulfo",
+      "authorDeathYear": 1986,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "arte-poesia-indigena",
+      "title": "Poesía indígena contemporánea (selección)",
+      "author": "Francisco Toledo / Irma Pineda / Briceida Cuevas Cob",
+      "authorDeathYear": null,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": {
+        "translator": null,
+        "languageConsultant": null,
+        "sourceLanguage": "unknown",
+        "targetLanguage": "es",
+        "translationStatus": "unknown"
+      },
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    },
+    {
+      "workId": "borderlands-la-frontera",
+      "title": "Borderlands/La Frontera",
+      "author": "Gloria Anzaldúa",
+      "authorDeathYear": 2004,
+      "firstPublicationYear": null,
+      "period": "unknown",
+      "region": "unknown",
+      "genres": [
+        "unknown"
+      ],
+      "originalLanguage": "unknown",
+      "languageVariant": null,
+      "translation": null,
+      "territories": [
+        "MX",
+        "US"
+      ],
+      "layers": {
+        "underlyingWork": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "edition": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "translation": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "transcription": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        },
+        "recording": {
+          "status": "unknown",
+          "territories": [
+            "MX",
+            "US"
+          ],
+          "evidenceUrl": null,
+          "license": null,
+          "term": null,
+          "contact": null,
+          "reviewDue": null,
+          "notes": "No layer-specific clearance evidence verified; unknown blocks publication."
+        }
+      },
+      "sourceUrl": "https://www.cervantesvirtual.com/obras/materia/literatura-mexicana-526/",
+      "sourceInstitution": "Biblioteca Virtual Miguel de Cervantes (discovery catalog)",
+      "license": null,
+      "contact": null,
+      "legalReviewRequired": false,
+      "notes": "Candidate from task-003; exact expression, edition, provenance, and permissions require verification.",
+      "reviewer": "Tlamatini/Researcher",
+      "reviewedAt": "2026-09-15T01:00:00Z"
+    }
+  ]
+}

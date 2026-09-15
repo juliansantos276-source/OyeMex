@@ -1,0 +1,42 @@
+{
+  "taskId": "task-003",
+  "status": "built",
+  "version": 1,
+  "date": "2026-09-15",
+  "sourceResearch": "agent_workspace/research/task-003-research.md",
+  "masterPlan": "plans/MASTER_PLAN.md",
+  "evidenceRule": "Facts require source URLs from research; all sequencing, thresholds, scores, and product designs are proposals; unknown rights block publication.",
+  "horizons": {
+    "0-3_months": ["rights ledger", "audit nine fichas", "5-8 cleared PD pilot candidates", "2-3 original readings after clearance", "author/work templates", "audio resume", "search facets", "Conoce México prototype"],
+    "3-6_months": ["regional/period/language expansion", "linguistic/community review", "four Camino prototypes", "one licensed pilot", "transcript search", "coverage review"],
+    "6-12_months": ["publisher/estate licensing", "consented bilingual Indigenous audio", "professional narration and compensation", "diaspora/education partnerships", "licensed offline/recommendations"]
+  },
+  "queues": {
+    "P0": ["rights ledger", "catalog normalization", "5-8 cleared pilot works", "page/audio templates", "search facets"],
+    "P1": ["Caminos and coverage dashboard", "Indigenous-language review process", "first license pilot"],
+    "P2": ["living-author/estate catalog", "institutional/education/diaspora partnerships"]
+  },
+  "metadata": {
+    "entities": ["author", "work", "edition", "translation", "recording", "path"],
+    "author": ["author_id", "name", "variants", "birth_date", "death_date", "regions", "languages", "traditions", "authority_ids", "bio", "sources", "reviewer", "reviewed_at"],
+    "work": ["work_id", "title", "variants", "author_id", "first_publication_date", "period", "regions", "genres", "themes", "traditions", "original_language", "language_variant", "extent", "summary", "why_listen", "content_notes", "age_guidance", "sources"],
+    "expressionEdition": ["edition_id", "work_id", "publisher", "edition_date", "editor", "source_url", "source_institution", "source_record_id", "text_version", "transcription_status", "access_checked_at"],
+    "translation": ["translation_id", "edition_id", "source_language", "target_language", "translator", "language_consultant", "translation_date", "translation_source", "translation_status", "rights_evidence_url", "notes"],
+    "rights": ["underlying_work_status", "edition_status", "translation_status", "transcription_status", "recording_status", "territories", "evidence_url", "contact", "license", "term", "review_due", "notes"],
+    "recording": ["recording_id", "performer", "producer", "recording_date", "duration", "file_checksum", "audio_url", "transcript_url", "pronunciation_notes", "consent_notes", "credits", "license"],
+    "audit": ["confidence", "factual_claim_sources", "reviewer", "last_reviewed", "change_log", "takedown_state"]
+  },
+  "rightsWorkflow": ["identify exact expression and intended territory/media/term", "verify sources", "separate five rights layers", "capture evidence and license terms", "obtain community consent/review when applicable", "human clearance sign-off", "produce/checksum from cleared source", "publish credits and takedown route", "review expiry"],
+  "pageArchitecture": {"author": ["identity", "sourced bio", "context", "why matters", "start here", "works/audio", "related", "sources"], "work": ["title/author/date", "period/region/genre/language", "description", "player/resume", "duration", "transcript", "why listen", "content notes", "rights notice", "related/Caminos", "source/report issue"]},
+  "taxonomy": {"facets": ["author", "title", "period", "region", "genre", "theme", "language_variant", "tradition", "age", "difficulty", "audio", "transcript", "rights_state"], "masterPlanCategories": ["RAÍCES", "COLONIA", "NACIMIENTO", "REVOLUCIÓN", "MÉXICO PIENSA", "MÉXICO SIENTE", "MÉXICO PROFUNDO", "MÉXICO EN EL MUNDO"]},
+  "caminos": ["Conoce México", "Aprende a Pensar México", "México para Jóvenes", "México y Estados Unidos"],
+  "audioQueue": {"P0": "2-3 short cleared selections with transcript, pronunciation QA, credits, checksum", "P1": "4-8 cleared works/selections, multiple voices, reviewed Nahua sample proposal", "P2": "licensed living authors, bilingual Indigenous productions, professional narration and compensation"},
+  "coverageScorecard": {"scale": "0 absent, 1 thin, 2 rights-safe depth, 3 strong contextual plurality", "dimensions": ["period", "region", "gender", "Indigenous languages/communities", "Afro-Mexican histories", "genre/form", "traditions/viewpoints", "rights depth"], "gate": "No Camino launch with an unexplained zero; publish gaps and rationale."},
+  "acceptanceGates": ["source or proposal/uncertainty label", "all rights layers status and playable clearance", "representation review", "mobile playback/search/accessibility/stable IDs", "audio contract/consent/credits/checksum/transcript", "contextual non-propaganda framing", "Julian or delegated human sign-off"],
+  "autonomous": ["draft metadata/schema", "deduplicate", "suggest tags/paths", "collect URLs", "internal checklists", "file/checksum/accessibility QA", "draft summaries marked for review", "report coverage gaps"],
+  "humanRequired": ["legal rights conclusions", "rights-holder contact/contracts", "consent/compensation", "community authority decisions", "publication approval", "sensitive framing/factual disputes", "spending/deployment"],
+  "firstImplementationTasks": ["Rights-ledger MVP", "Pilot catalog plus author/work page contract", "Afro-Mexican coverage plan", "Discovery facets plus Conoce México and coverage audit", "Jurisdiction-sensitive López Velarde/Reyes rights rows"],
+  "uncertainties": ["Exact dates, editions, territorial copyright status, titular contacts, and audio provenance must be verified per item", "Candidate P0 works and thresholds are proposals", "Indigenous representation requires named linguistic/community review", "Afro-Mexican coverage requires named candidates and expert/community consultation", "López Velarde and Reyes require explicit per-jurisdiction legal review before playable release"],
+  "correctionsFromCritic": ["C1: named Afro-Mexican representation plan in P1 coverage review", "C2: translation entity with translator and language consultant fields", "C3: explicit jurisdiction-sensitive rights rows for López Velarde and Reyes"],
+  "currentRoleAfterBuild": "critic"
+}
