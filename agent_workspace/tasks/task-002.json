@@ -4,7 +4,7 @@
   "title": "Produce and publish El Zarco — Chapter III",
   "goal": "Research, narrate, integrate, test, and publish one new OyeLoMex chapter using the orchestra workflow.",
   "createdBy": "orchestrator",
-  "status": "approved",
+  "status": "published",
   "currentRole": "orchestrator",
   "dependencies": ["task-001"],
   "scope": {
@@ -40,6 +40,7 @@
     {"status": "built", "role": "builder", "note": "Produced audio/elzarco_cap3.mp3 at 20:44.40 and added catalog metadata; no commit or deploy."},
     {"status": "passed", "role": "critic", "note": "PASS: audio integrity, existing audio hashes, exact metadata, syntax, local HTTP and no-publish gate verified."},
     {"status": "approved", "role": "orchestrator", "note": "Approved for commit, push, and production deploy."},
+    {"status": "published", "role": "orchestrator", "note": "Commit b4e763e pushed to main; production page and audio verified HTTP 200."},
     {"status": "built", "role": "builder", "note": "Extracted 52 body paragraphs, generated elzarco_cap3.mp3 (20:44.40), added catalog entry, and passed syntax, diff, and local HTTP tests; ready for critic."},
     {"status": "reviewing", "role": "critic", "note": "Independent verification in progress."},
     {"status": "passed", "role": "critic", "note": "Audio, metadata, syntax, diff, local HTTP, hashes, and no-publication checks passed; review written."}
