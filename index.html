@@ -147,6 +147,7 @@ header{border-bottom:1px solid var(--border-color);background:var(--bg-cream);po
    <button class="filter-btn" onclick="setCategory('REVOLUCIÓN')">Revolución</button>
    <button class="filter-btn" onclick="setCategory('MÉXICO PIENSA')">México Piensa</button>
    <button class="filter-btn" onclick="setCategory('MÉXICO SIENTE')">México Siente</button>
+   <button class="filter-btn" onclick="setCategory('MÉXICO PROFUNDO')">México Profundo</button>
   </div>
  </div>
  <div id="contentGrid" class="grid"></div>
@@ -187,6 +188,10 @@ const libraryData = [
    whyListen:"La segunda parte deja ver cómo una comunidad intenta recuperar la dignidad después de que la violencia altera sus vínculos.",
    excerpt:"La historia no absuelve a nadie: muestra el precio de confundir la libertad con el poder de imponer miedo.",
    audioSrc:"audio/elzarco_cap2.mp3", source:"Biblioteca Digital ILCE · grabación OyeLoMex", textUrl:"https://es.wikisource.org/wiki/El_Zarco/Cap%C3%ADtulo_II" },
+ { id:"el-zarco-parte-3", title:"El Zarco · Parte III", author:"Ignacio Manuel Altamirano", year:1900, period:"MÉXICO PROFUNDO", duration:"20m 44s",
+   desc:"Manuela, Pilar y Doña Antonia enfrentan el miedo de los plateados y el futuro incierto de Yautepec.",
+   whyListen:"Una conversación familiar revela cómo la violencia transforma las decisiones íntimas y la vida cotidiana.",
+   excerpt:"En el patio interior de una casita pobre pero de graciosa apariencia...", audioSrc:"audio/elzarco_cap3.mp3", source:"Biblioteca Digital ILCE · grabación OyeLoMex", textUrl:"https://es.wikisource.org/wiki/El_Zarco/Cap%C3%ADtulo_III" },
  { id:"los-de-abajo", title:"Los de abajo", author:"Mariano Azuela", year:1915, period:"REVOLUCIÓN", duration:"Próximamente",
    desc:"El retrato crudo del campesinado durante el torbellino revolucionario. Sin falsos héroes ni propaganda.",
    whyListen:"Obra fundacional de la novela revolucionaria. Su ficha está lista; el audio se incorporará en una próxima edición.",
@@ -295,9 +300,10 @@ function openWorkModal(id){
  document.getElementById('modalContent').innerHTML=
   '<span class="pill">'+it.period+'</span>'+
   '<h2 style="margin:10px 0 4px;font-size:1.8rem">'+it.title+'</h2>'+
+  '<p class="muted" style="margin:10px 0 2px;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em">Ficha bibliográfica</p>'+
   '<p class="card-author" style="font-size:1.05rem">'+it.author+' — '+it.year+'</p>'+
   '<div class="detail-quote">"'+it.excerpt+'"</div>'+
-  '<h4 style="font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-top:20px">¿Por qué escuchar esto?</h4>'+
+  '<h4 style="font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-top:20px">Nota editorial · ¿Por qué escuchar esto?</h4>'+
   '<p style="margin-top:6px;font-size:.95rem">'+it.whyListen+'</p>'+((it.source)?'<p class="muted" style="margin-top:18px;font-size:.78rem"><strong>Referencia editorial:</strong> '+it.source+'</p>':'')+
   '<div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">'+
    (it.audioSrc?'<button class="btn btn-primary" onclick="playWork(\''+it.id+'\');closeModalDirect()">Reproducir ('+it.duration+')</button>':'<span class="pill" style="padding:10px">Audio próximamente</span>')+

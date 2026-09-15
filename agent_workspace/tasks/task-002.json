@@ -1,0 +1,47 @@
+{
+  "id": "task-002",
+  "project": "OyeLoMex",
+  "title": "Produce and publish El Zarco — Chapter III",
+  "goal": "Research, narrate, integrate, test, and publish one new OyeLoMex chapter using the orchestra workflow.",
+  "createdBy": "orchestrator",
+  "status": "approved",
+  "currentRole": "orchestrator",
+  "dependencies": ["task-001"],
+  "scope": {
+    "allowedFiles": [
+      "audio/elzarco_cap3.mp3",
+      "index.html",
+      "README.md",
+      "agent_workspace/tasks/task-002.json",
+      "agent_workspace/research/task-002-research.md",
+      "agent_workspace/builds/task-002-build.md",
+      "agent_workspace/reviews/task-002-review.md"
+    ],
+    "forbiddenActions": ["publish_without_approval", "modify_secrets", "invent_sources", "delete_user_data", "alter_existing_audio"]
+  },
+  "deliverables": {
+    "research": "agent_workspace/research/task-002-research.md",
+    "build": "agent_workspace/builds/task-002-build.md",
+    "review": "agent_workspace/reviews/task-002-review.md"
+  },
+  "acceptanceCriteria": [
+    "Researcher verifies the Chapter III text URL and records source and rights notes.",
+    "Audio is generated from the verified chapter text in Mexican Spanish using the project's established voice pipeline.",
+    "Existing audio files remain unchanged.",
+    "Catalog metadata includes El Zarco Chapter III and a verified reading URL.",
+    "The new audio has a working player and no false duration claim.",
+    "HTML/JavaScript syntax, local page, and local audio delivery pass tests.",
+    "Critic writes PASS before any commit, push, or deploy."
+  ],
+  "evidenceRequired": ["source_url", "rights_note", "audio_file", "duration_evidence", "test_output", "changed_files"],
+  "history": [
+    {"status": "queued", "role": "orchestrator", "note": "Orchestra pilot: one new chapter."},
+    {"status": "researched", "role": "researcher", "note": "Chapter III source verified: https://es.wikisource.org/wiki/El_Zarco/Cap%C3%ADtulo_III (HTTP 200). /El_Zarco/III is empty; not usable. Audio conventions documented."},
+    {"status": "built", "role": "builder", "note": "Produced audio/elzarco_cap3.mp3 at 20:44.40 and added catalog metadata; no commit or deploy."},
+    {"status": "passed", "role": "critic", "note": "PASS: audio integrity, existing audio hashes, exact metadata, syntax, local HTTP and no-publish gate verified."},
+    {"status": "approved", "role": "orchestrator", "note": "Approved for commit, push, and production deploy."},
+    {"status": "built", "role": "builder", "note": "Extracted 52 body paragraphs, generated elzarco_cap3.mp3 (20:44.40), added catalog entry, and passed syntax, diff, and local HTTP tests; ready for critic."},
+    {"status": "reviewing", "role": "critic", "note": "Independent verification in progress."},
+    {"status": "passed", "role": "critic", "note": "Audio, metadata, syntax, diff, local HTTP, hashes, and no-publication checks passed; review written."}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "task-001",
+  "project": "OyeLoMex",
+  "title": "Ampliar el catálogo con textos legibles y fuentes verificadas",
+  "goal": "Permitir que una persona descubra una obra mexicana, abra su ficha y lea el texto completo desde una fuente pública confiable, sin inventar metadatos.",
+  "createdBy": "orchestrator",
+  "status": "approved",
+  "currentRole": "orchestrator",
+  "dependencies": [],
+  "scope": {
+    "allowedFiles": ["index.html", "README.md", "agent_workspace/research/task-001-research.md", "agent_workspace/builds/task-001-build.md", "agent_workspace/reviews/task-001-review.md"],
+    "forbiddenActions": ["publish_without_approval", "modify_secrets", "invent_sources", "delete_user_data"]
+  },
+  "deliverables": {
+    "research": "agent_workspace/research/task-001-research.md",
+    "build": "agent_workspace/builds/task-001-build.md",
+    "review": "agent_workspace/reviews/task-001-review.md"
+  },
+  "acceptanceCriteria": [
+    "Cada obra nueva tiene título, autor, año y categoría claramente diferenciados entre hecho verificado y ficha editorial.",
+    "Las obras con texto público validado ofrecen un enlace de lectura en pestaña nueva.",
+    "Las obras sin audio no muestran controles de reproducción falsos.",
+    "El HTML y JavaScript pasan validación sintáctica local.",
+    "El Critic debe producir PASS antes de cualquier publicación."
+  ],
+  "evidenceRequired": ["source_urls", "test_output", "changed_files"],
+  "history": [
+    {"status": "queued", "role": "orchestrator", "note": "Tarea piloto creada; pendiente de investigación."},
+    {"status": "researched", "role": "researcher", "note": "Informe completado; tres URLs de Wikisource verificadas HTTP 200. No se añadieron nuevas URLs sin verificación individual."},
+    {"status": "built", "role": "builder", "note": "Filtro México Profundo y separación bibliográfica/editorial implementados; sintaxis JS y diff validados; sin commit ni deploy."},
+    {"status": "reviewing", "role": "orchestrator", "note": "Critic solicitado antes de cualquier publicación."},
+    {"status": "passed", "role": "critic", "note": "PASS: sintaxis, diff, servidor local, audio, filtro, enlaces y gate de publicación verificados."},
+    {"status": "approved", "role": "orchestrator", "note": "Approved for publication after Critic PASS."}
+  ]
+}

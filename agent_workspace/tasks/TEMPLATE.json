@@ -1,0 +1,22 @@
+{
+  "id": "task-000",
+  "project": "OyeLoMex",
+  "title": "",
+  "goal": "",
+  "createdBy": "orchestrator",
+  "status": "queued",
+  "currentRole": "researcher",
+  "dependencies": [],
+  "scope": {
+    "allowedFiles": [],
+    "forbiddenActions": ["publish_without_approval", "modify_secrets", "invent_sources", "delete_user_data"]
+  },
+  "deliverables": {
+    "research": "agent_workspace/research/task-000-research.md",
+    "build": "agent_workspace/builds/task-000-build.md",
+    "review": "agent_workspace/reviews/task-000-review.md"
+  },
+  "acceptanceCriteria": [],
+  "evidenceRequired": ["source_urls", "test_output", "changed_files"],
+  "history": []
+}

@@ -1,0 +1,16 @@
+{
+  "project": "OyeLoMex",
+  "version": 2,
+  "stage": "orchestra-pilot-task-002",
+  "activeTask": "task-002",
+  "allowedProductionActions": {
+    "researcher": ["read_workspace", "web_research", "write_research"],
+    "builder": ["read_workspace", "modify_branch_or_workspace", "run_tests", "write_build_report"],
+    "critic": ["read_workspace", "run_tests", "write_review", "pass_or_fail"],
+    "orchestrator": ["create_tasks", "assign_roles", "approve_publish", "publish_after_approval"]
+  },
+  "publicationRule": "No se publica ningún cambio sin revisión PASS del Critic y aprobación explícita del Orchestrator.",
+  "updatedAt": "2026-09-14",
+  "lastDecision": "Task-002 created: El Zarco Chapter III.",
+  "completedTasks": ["task-001"]
+}
